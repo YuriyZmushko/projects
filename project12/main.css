@@ -107,10 +107,10 @@ li {
 }
 
 .nav-list {
-    position: fixed;
+    position: absolute;
     visibility: hidden;
     top: 65px;
-    right: 0;
+    right: -15px;
     width: 140px;
     background: #0b0c0d;
     border-top: 1px solid #fff;
