@@ -20,7 +20,7 @@
 }
 
 body {
-    font: 16px/1.8 'Proxima Nova Rg', sans-serif;
+    font: 15px/1.45 'Proxima Nova Rg', sans-serif;
     color: #0b0c0d;
     background: #f3f4f7;
 }
@@ -35,19 +35,19 @@ h1 {
 }
 
 h2 {
-    font: normal 56px 'Forever Brush Script', cursive;
+    font: normal 26px 'Forever Brush Script', cursive;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 90px;
+    margin-bottom: 42px;
     position: relative;
 }
 
 h2::after {
     content: "";
     position: absolute;
-    bottom: -30px;
-    width: 109px;
-    height: 2px;
+    bottom: -14px;
+    width: 51px;
+    height: 1px;
     background: #fff;
     left: 50%;
     transform: translateX(-50%);
@@ -90,7 +90,7 @@ body>.wrapper {
 
 .logo {
     padding-top: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 li {
@@ -141,7 +141,7 @@ li {
     align-items: center;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 10px;
     width: 26px;
     height: 26px;
 }
@@ -262,7 +262,7 @@ li {
 }
 
 .story-text {
-    padding: 60px 0;
+    padding: 50px 0;
     text-align: center;
 }
 
@@ -271,8 +271,8 @@ li {
     text-align: center;
     background-size: cover;
     background-position: right;
-    padding: 100px 0;
-    min-height: 500px;
+    padding: 60px 0;
+    /* min-height: 500px; */
     color: #fff;
 }
 
@@ -490,11 +490,22 @@ li {
 @media (min-width: 480px) {
     
     body {
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 1.5;
     }
     
     h1 {
         font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+        margin-bottom: 57px;
+    }
+    
+    h2::after {
+        bottom: -19px;
+        width: 70px;
     }
 
     .menu-items {
@@ -509,9 +520,27 @@ li {
 
 @media (min-width: 768px) {
     
+
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
     h1 {
         font-size: 50px;
     }
+
+    h2 {
+        font-size: 46px;
+        margin-bottom: 74px;
+    }
+    
+    h2::after {
+        bottom: -25px;
+        width: 90px;
+        height: 2px;
+    }
+    
 
     h4 {
         margin: 0 0 40px 0;
@@ -533,6 +562,7 @@ li {
 
     .story-text {
         width: 45%;
+        padding: 60px 0;
     }
 
     .items li {
@@ -604,6 +634,21 @@ li {
 
 @media (min-width: 1024px) {
     
+    body {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    h2 {
+        font-size: 56px;
+        margin-bottom: 90px;
+    }
+    
+    h2::after {
+        bottom: -30px;
+        width: 109px;
+    }
+    
     .header {
         top: 40px;
         align-items: center;
@@ -643,6 +688,10 @@ li {
         padding: 0 0 0 55px;
         position: relative;
         border: none;
+    }
+
+    .nav-list a {
+        padding: 0;
     }
 
     .has-sub::before {
