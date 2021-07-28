@@ -35,18 +35,18 @@ h1 {
 }
 
 h2 {
-    font: normal 26px 'Forever Brush Script', cursive;
+    font: normal 30px 'Forever Brush Script', cursive;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 42px;
+    margin-bottom: 48px;
     position: relative;
 }
 
 h2::after {
     content: "";
     position: absolute;
-    bottom: -14px;
-    width: 51px;
+    bottom: -16px;
+    width: 58px;
     height: 1px;
     background: #fff;
     left: 50%;
