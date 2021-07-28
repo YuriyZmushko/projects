@@ -20,7 +20,7 @@
 }
 
 body {
-    font: 15px/1.45 'Proxima Nova Rg', sans-serif;
+    font: 16px/1.4 'Proxima Nova Rg', sans-serif;
     color: #0b0c0d;
     background: #f3f4f7;
 }
@@ -35,18 +35,18 @@ h1 {
 }
 
 h2 {
-    font: normal 30px 'Forever Brush Script', cursive;
+    font: normal 34px 'Forever Brush Script', cursive;
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 55px;
     position: relative;
 }
 
 h2::after {
     content: "";
     position: absolute;
-    bottom: -16px;
-    width: 58px;
+    bottom: -18px;
+    width: 66px;
     height: 1px;
     background: #fff;
     left: 50%;
@@ -272,7 +272,6 @@ li {
     background-size: cover;
     background-position: right;
     padding: 60px 0;
-    /* min-height: 500px; */
     color: #fff;
 }
 
@@ -285,7 +284,7 @@ li {
 }
 
 .menu {
-    font: 16px 'Proxima Nova Rg', sans-serif;
+    font: 14px 'Proxima Nova Rg', sans-serif;
 }
 
 .menu h2 {
@@ -325,13 +324,13 @@ li {
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     position: relative;
 }
 
 .items li p {
     align-self: flex-end;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 .wrapper {
@@ -488,28 +487,27 @@ li {
 }
 
 @media (min-width: 480px) {
-    
-    body {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-    
+         
     h1 {
         font-size: 40px;
     }
 
     h2 {
-        font-size: 36px;
-        margin-bottom: 57px;
+        font-size: 42px;
+        margin-bottom: 68px;
     }
     
     h2::after {
-        bottom: -19px;
-        width: 70px;
+        bottom: -23px;
+        width: 82px;
     }
 
     .menu-items {
         padding: 0 7%;
+    }
+
+    .card-content {
+        width: 350px;
     }
 
     .center {
@@ -520,9 +518,8 @@ li {
 
 @media (min-width: 768px) {
     
-
     body {
-        font-size: 16px;
+        font-size: 17px;
         line-height: 1.6;
     }
 
@@ -531,13 +528,13 @@ li {
     }
 
     h2 {
-        font-size: 46px;
-        margin-bottom: 74px;
+        font-size: 50px;
+        margin-bottom: 80px;
     }
     
     h2::after {
-        bottom: -25px;
-        width: 90px;
+        bottom: -27px;
+        width: 97px;
         height: 2px;
     }
     
@@ -549,11 +546,10 @@ li {
     .story-flex {
         flex-direction: row;
         justify-content: space-around;
-        align-items: center;
     }
 
     .susi {
-        max-width: 45%;
+        max-width: 40%;
     }
 
     .story {
@@ -567,6 +563,15 @@ li {
 
     .items li {
         width: 45%;
+        margin-bottom: 25px;
+    }
+
+    .items li p {
+        margin: 25px 0;
+    }
+
+    .menu {
+        font-size: 15px;
     }
 
     .menu-items {
@@ -578,7 +583,7 @@ li {
     }
 
     .card-content {
-        width: 478px;
+        width: 380px;
     }
 
     .footer-flex {
@@ -686,11 +691,10 @@ li {
 
     .nav-list>li {
         padding: 0 0 0 55px;
-        position: relative;
         border: none;
     }
 
-    .nav-list a {
+    .nav-list>li>a {
         padding: 0;
     }
 
@@ -699,14 +703,10 @@ li {
     }
 
     .submenu {
-        width: 150px;
         background: transparent;
-        position: absolute;
         top: 100%;
-        left: 20px;
+        left: 0;
         visibility: hidden;
-        transition: opacity 0.3s linear, transform 0.3s; 
-        text-align: center;
         border: none;
     }
 
@@ -727,6 +727,10 @@ li {
         padding: 120px 0;
     }
 
+    .menu {
+        font-size: 16px;
+    }
+
     .menu ul {
         justify-content: space-between;
     }
@@ -735,9 +739,21 @@ li {
         padding-top: 120px;
     }
 
+    .items li {
+        margin-bottom: 30px;
+    }
+
+    .items li p {
+        margin: 30px 0;
+    }
+
     .img-wrapper {
         width: auto;
         overflow: inherit;
+    }
+
+    .card-content {
+        width: 478px;
     }
 
     .footer-flex h3 {
