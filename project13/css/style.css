@@ -1,0 +1,113 @@
+/* line 1, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+body {
+  background: #FAFAFA;
+  font: 12px/1.5 'Lato', sans-serif;
+  color: #101010;
+  display: flex;
+  flex-direction: column;
+  min-width: 320px;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* line 12, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 16, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+h1 {
+  font-size: 72px;
+  color: #FFFFFF;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* line 23, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+h2 {
+  font-size: 36px;
+  color: #000000;
+}
+
+/* line 28, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+h3 {
+  font-size: 18px;
+}
+
+/* line 32, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.wrapper {
+  width: 100%;
+}
+
+/* line 36, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* line 41, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  text-transform: uppercase;
+}
+
+/* line 52, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.header a {
+  color: #FFFFFF;
+  padding: 0;
+}
+
+/* line 59, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.header .logo a {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* line 66, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.header .nav-list {
+  display: flex;
+  position: static;
+}
+
+/* line 71, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.header .nav-list li {
+  display: inline;
+  list-style: none;
+  padding: 2px 15px;
+}
+
+/* line 77, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.header .nav-list a {
+  font-size: 14px;
+}
+
+/* line 81, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.header .nav-list a:hover {
+  font-weight: 700;
+}
+
+/* line 93, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.main {
+  flex-grow: 1;
+}
+
+/* line 97, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.firstscreen {
+  background-image: url(../images/bg-main.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
