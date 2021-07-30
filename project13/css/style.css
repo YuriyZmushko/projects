@@ -41,11 +41,12 @@ h3 {
 
 /* line 36, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .container {
-  max-width: 1100px;
+  max-width: 1130px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-/* line 41, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 42, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header {
   display: flex;
   justify-content: space-between;
@@ -57,47 +58,47 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 52, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 53, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header a {
   color: #FFFFFF;
   padding: 0;
 }
 
-/* line 59, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 60, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .logo a {
   font-weight: bold;
   font-size: 18px;
 }
 
-/* line 66, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 67, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .nav-list {
   display: flex;
   position: static;
 }
 
-/* line 71, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 72, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .nav-list li {
   display: inline;
   list-style: none;
-  padding: 2px 15px;
+  padding: 5px 15px;
 }
 
-/* line 77, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 78, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .nav-list a {
   font-size: 14px;
 }
 
-/* line 81, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 82, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .nav-list a:hover {
-  font-weight: 700;
+  text-shadow: 1px 0 1px rgba(255, 255, 255, 0.8);
 }
 
-/* line 93, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 94, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .main {
   flex-grow: 1;
 }
 
-/* line 97, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 98, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .firstscreen {
   background-image: url(../images/bg-main.jpg);
   background-size: cover;
