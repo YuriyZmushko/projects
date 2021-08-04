@@ -41,7 +41,7 @@ h2 {
     color: #000000;
     margin: 40px 0;
 
-    @media (min-width: 480px) {
+    @media (min-width: 1024px) {
         font-size: 36px;
         margin: 70px 0;
     }
@@ -83,55 +83,73 @@ h3 {
     }
 
     
-    .btn {
-        cursor: pointer;
-        background: transparent;
-        color: #fff;
-        font: 14px 'Lato', sans-serif;
-        text-transform: uppercase;
-        border: 1px solid #fff;
-        border-radius: 6px;
-        visibility: hidden;
+    
 
-        @media (min-width: 768px) {
-            visibility: visible;
-            position: absolute;
-            top: 2px;
-            right: 90px;
-            padding: 5px 20px;
-        }
+}
 
-        @media (min-width: 1024px) {
-            position: static;
-            padding: 11px 28px;
-        }
+.logo img {
+    width: 165px;
 
+    @media (min-width: 480px) {
+        width: auto;
     }
 
-    .btn:hover {
+}
+
+.btn {
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    position: absolute;
+    top: -1px;
+    right: 71px;
+    
+    @media (min-width: 768px) {
+        visibility: visible;
+        top: 1px;
+        right: 90px;
+        padding: 5px 20px;
+        border: 1px solid #fff;
+    }
+
+    @media (min-width: 1024px) {
+        position: static;
+        padding: 11px 28px;
+    }
+
+    .btn-txt {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
+    }
+
+    .btn-img {
+        width: 29px;
+        
+
+        @media (min-width: 768px) {
+            width: 0;
+            display: none;
+        }
+    }
+
+}
+
+.btn:hover {
+
+    @media (min-width: 768px) {
         background: #fff;
         color: #ED4C5C;
     }
-
-    .btn-icon {
-        background: transparent;
-        position: absolute;
-        top: 0;
-        right: 75px;
-        border: none;
-        padding: 0;
-
-        @media (min-width: 768px) {
-            visibility: hidden;
-        }
-
-    }
-
+    
 }
 
-.btn-icon img {
-    width: 31px;
-}
 
 .nav-list {
     position: absolute;
@@ -149,6 +167,7 @@ h3 {
      
     @media (min-width: 1024px) {
         visibility: visible;
+        opacity: 100%;
         position: static;
         background: transparent;
         width: 100%;
@@ -368,7 +387,7 @@ h3 {
     align-items: center;
     max-width: 400px;
     width: 90%;
-    margin: 20px auto 0;
+    margin: 0 auto 65px;
     
 
     @media (min-width: 768px) {
@@ -415,12 +434,18 @@ h3 {
 
 .tech {
     background: #fff;
+
+    h2 {
+        padding-top: 40px;
+        margin: 0;
+    }
 }
 
 .ksf {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 40px;
 }
 
 .ksf-holder {
@@ -428,7 +453,7 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-bottom: 40px;
+    margin: 20px auto 0;
 
     @media (min-width: 480px) {
         width: 45%;
@@ -441,7 +466,7 @@ h3 {
     }
 
     .big {
-        font: 700 100px/1.2 'Lato', sans-serif;
+        font: 700 100px 'Lato', sans-serif;
         color: rgba(16, 16, 16, 0.08);
     }
 
@@ -452,7 +477,7 @@ h3 {
     }
 
     p {
-        padding: 0 15px 20px;
+        padding: 0 15px;
         line-height: 1.2;
     }
 }
@@ -509,7 +534,7 @@ h3 {
     display: flex;
     margin-bottom: 50px;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
     @media (min-width: 768px) {
         justify-content: flex-end;
@@ -524,7 +549,7 @@ h3 {
     width: 40%;
 
     @media (min-width: 768px) {
-        width: 31%;
+        width: 33%;
     }
 
     @media (min-width: 1024px) {
@@ -561,8 +586,10 @@ h3 {
 
 .copy {
     text-align: center;
-
+    
     @media (min-width: 1024px) {
         text-align: left;
     }
+
 }
+
