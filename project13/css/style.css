@@ -50,7 +50,7 @@ h1 {
   }
 }
 
-/* line 40, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 39, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 h2 {
   font-size: 32px;
   color: #000000;
@@ -58,32 +58,32 @@ h2 {
 }
 
 @media (min-width: 480px) {
-  /* line 40, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 39, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   h2 {
     font-size: 36px;
   }
 }
 
-/* line 50, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 49, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 h3 {
   font-size: 18px;
   margin: 7px 0;
 }
 
-/* line 56, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 54, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .wrapper {
   width: 100%;
   margin: 0;
 }
 
-/* line 61, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 59, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .container {
   max-width: 1107px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* line 67, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 65, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header {
   display: flex;
   justify-content: space-between;
@@ -96,19 +96,19 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 67, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 65, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .header {
     left: 0;
     right: 0;
   }
 }
 
-/* line 86, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 80, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header a {
   color: #FFFFFF;
 }
 
-/* line 92, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 86, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .btn {
   cursor: pointer;
   background: transparent;
@@ -121,7 +121,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 92, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 86, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .header .btn {
     visibility: visible;
     position: absolute;
@@ -132,20 +132,20 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 92, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 86, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .header .btn {
     position: static;
     padding: 11px 28px;
   }
 }
 
-/* line 120, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 111, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .btn:hover {
   background: #fff;
   color: #ED4C5C;
 }
 
-/* line 125, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 116, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header .btn-icon {
   background: transparent;
   position: absolute;
@@ -156,21 +156,22 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 125, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 116, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .header .btn-icon {
     visibility: hidden;
   }
 }
 
-/* line 139, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
-.header .btn-icon img {
+/* line 132, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.btn-icon img {
   width: 31px;
 }
 
-/* line 145, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 136, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list {
   position: absolute;
   visibility: hidden;
+  opacity: 0;
   top: 40px;
   right: 0;
   left: 0;
@@ -183,7 +184,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 145, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 136, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .nav-list {
     visibility: visible;
     position: static;
@@ -195,56 +196,56 @@ h3 {
   }
 }
 
-/* line 176, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 160, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li.active {
   font-weight: 700;
 }
 
-/* line 180, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 164, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li.active a {
   text-shadow: none;
   cursor: default;
 }
 
-/* line 185, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 169, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li.active a:hover:after {
   width: 0%;
 }
 
-/* line 189, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 173, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li {
   list-style: none;
   padding: 8px;
 }
 
 @media (min-width: 1024px) {
-  /* line 189, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 173, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .nav-list li {
     padding: 0 10px;
   }
 }
 
-/* line 199, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 183, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list a {
   font-size: 14px;
   position: relative;
 }
 
-/* line 206, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 188, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list a,
 .nav-list a:after {
   transition: none;
 }
 
 @media (min-width: 1024px) {
-  /* line 206, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 188, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .nav-list a,
   .nav-list a:after {
     transition: all .3s;
   }
 }
 
-/* line 219, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 200, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list a::after {
   position: absolute;
   bottom: -8px;
@@ -256,22 +257,22 @@ h3 {
   height: 1px;
 }
 
-/* line 230, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 211, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list a:hover:after {
   width: 100%;
 }
 
-/* line 234, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 215, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list a:hover {
   text-shadow: 1px 0 1px #fff;
 }
 
-/* line 241, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 222, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 #menu-toggle {
   display: none;
 }
 
-/* line 245, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 226, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .menu-btn {
   display: flex;
   align-items: center;
@@ -283,13 +284,13 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 245, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 226, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .menu-btn {
     visibility: hidden;
   }
 }
 
-/* line 260, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 241, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .menu-btn > span, .menu-btn > span::after, .menu-btn > span::before {
   display: block;
   position: absolute;
@@ -298,48 +299,50 @@ h3 {
   background-color: #fff;
 }
 
-/* line 268, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 249, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .menu-btn > span::after {
   content: "";
   top: 10px;
 }
 
-/* line 273, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 254, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .menu-btn > span::before {
   content: "";
   top: -10px;
 }
 
-/* line 278, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 259, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 #menu-toggle:checked ~ .menu-btn > span {
   transform: rotate(45deg);
   transition: transform 0.3s linear;
 }
 
-/* line 283, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 264, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 #menu-toggle:checked ~ .menu-btn > span::before {
   top: 0;
   transform: rotate(0);
 }
 
-/* line 288, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 269, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 #menu-toggle:checked ~ .menu-btn > span::after {
   top: 0;
   transform: rotate(90deg);
   transition: transform 0.3s linear;
 }
 
-/* line 294, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 275, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 #menu-toggle:checked ~ .nav-list {
   visibility: visible;
+  opacity: 100%;
+  transition: opacity .4s;
 }
 
-/* line 299, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 282, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .main {
   flex-grow: 1;
 }
 
-/* line 303, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 286, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .firstscreen {
   background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../images/bg-main.jpg);
   background-size: cover;
@@ -351,26 +354,26 @@ h3 {
   color: #fff;
 }
 
-/* line 313, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 296, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .firstscreen p {
   font-size: 16px;
   padding: 0 15px;
 }
 
 @media (min-width: 1024px) {
-  /* line 313, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 296, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .firstscreen p {
     font-size: 24px;
     margin: 0;
   }
 }
 
-/* line 327, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 310, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .firstscreen .container {
   max-width: 540px;
 }
 
-/* line 334, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 317, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .signup-btn {
   padding: 10px 30px;
   background: #fff;
@@ -384,7 +387,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 334, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 317, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .signup-btn {
     padding: 15px 54px;
     font-size: 14px;
@@ -393,26 +396,26 @@ h3 {
 }
 
 @media (max-height: 450px) {
-  /* line 334, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 317, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .signup-btn {
     margin-top: 0;
   }
 }
 
-/* line 358, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 341, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .signup-btn:hover {
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
 }
 
-/* line 364, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 347, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .features {
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 368, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 351, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .cards {
     display: flex;
     justify-content: space-between;
@@ -420,13 +423,13 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 368, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 351, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .cards {
     padding-top: 25px;
   }
 }
 
-/* line 382, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 365, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card {
   display: flex;
   flex-direction: column;
@@ -437,32 +440,32 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 382, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 365, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .card {
     width: 31%;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 382, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 365, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .card {
     margin: 0 auto 80px;
   }
 }
 
-/* line 401, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 384, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card h3 {
   padding: 28px 30px 13px;
   line-height: 1.2;
 }
 
-/* line 406, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 389, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card img {
   border-radius: 10px;
   width: 100%;
 }
 
-/* line 411, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 394, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card-text {
   width: 83%;
   background: #fff;
@@ -470,49 +473,49 @@ h3 {
   margin-top: -88px;
 }
 
-/* line 419, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 401, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card-text p {
   margin: auto;
   width: 71%;
 }
 
-/* line 424, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 406, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card-text a {
   margin: 25px 0;
   display: inline-block;
   color: #ED4C5C;
 }
 
-/* line 430, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 412, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card-text a:hover {
   font-weight: 700;
 }
 
-/* line 434, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 416, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .tech {
   background: #fff;
 }
 
-/* line 437, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 419, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .tech h2 {
   padding: 40px 0;
 }
 
 @media (min-width: 1024px) {
-  /* line 437, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 419, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .tech h2 {
     padding: 63px 0 20px;
   }
 }
 
-/* line 449, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 431, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-/* line 462, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 437, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder {
   display: flex;
   flex-direction: column;
@@ -522,14 +525,14 @@ h3 {
 }
 
 @media (min-width: 480px) {
-  /* line 462, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 437, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .ksf-holder {
     width: 45%;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 462, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 437, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .ksf-holder {
     max-width: 255px;
     margin-bottom: 104px;
@@ -537,26 +540,26 @@ h3 {
   }
 }
 
-/* line 479, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 454, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder .big {
   font: 700 100px/1.2 'Lato', sans-serif;
   color: rgba(16, 16, 16, 0.08);
 }
 
-/* line 484, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 459, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder img {
   width: 66px;
   max-height: 66px;
   margin-top: -60px;
 }
 
-/* line 490, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 465, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder p {
   padding: 0 15px 20px;
   line-height: 1.2;
 }
 
-/* line 498, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 472, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer {
   background: #FAFAFA;
   text-align: left;
@@ -564,50 +567,50 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 498, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 472, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer {
     padding-top: 80px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 507, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 481, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer h3 {
     margin: 7px 0 35px;
   }
 }
 
-/* line 516, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 490, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer ul {
   padding: 0;
 }
 
-/* line 520, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 494, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer li {
   list-style: none;
   padding: 0;
 }
 
 @media (min-width: 1024px) {
-  /* line 525, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 499, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer li a {
     margin: 0;
   }
 }
 
-/* line 533, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 507, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer a {
   display: block;
   color: #101010;
   margin-bottom: 5px;
 }
 
-/* line 539, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 513, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer a:hover {
   color: #ED4C5C;
 }
 
-/* line 545, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 519, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-flex {
   display: flex;
   margin-bottom: 50px;
@@ -616,62 +619,62 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 545, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 519, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-flex {
     justify-content: flex-end;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 545, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 519, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-flex {
     justify-content: space-between;
   }
 }
 
-/* line 560, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 534, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-holder {
   width: 40%;
 }
 
 @media (min-width: 768px) {
-  /* line 560, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 534, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-holder {
     width: 31%;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 560, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 534, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-holder {
     width: 25%;
   }
 }
 
-/* line 571, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 545, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-holder address {
   max-width: 175px;
   font-style: initial;
 }
 
-/* line 576, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 550, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-holder > img {
   width: 100%;
   max-width: 215px;
 }
 
-/* line 585, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 559, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .icons a {
   display: inline;
 }
 
-/* line 589, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 563, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .icons img {
   margin: 10px 10px 0 0;
   width: 14px;
 }
 
-/* line 594, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 568, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .icons a img:hover {
   filter: drop-shadow(0 0 5px #000);
 }
