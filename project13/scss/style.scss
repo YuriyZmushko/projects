@@ -569,3 +569,11 @@ h3 {
         filter: drop-shadow(0 0 5px #000);;
     }
 }
+
+.copy {
+    text-align: center;
+
+    @media (min-width: 1024px) {
+        text-align: left;
+    }
+}

@@ -679,4 +679,16 @@ h3 {
   filter: drop-shadow(0 0 5px #000);
 }
 
+/* line 573, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+.copy {
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  /* line 573, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  .copy {
+    text-align: left;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
