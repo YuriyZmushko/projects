@@ -1,4 +1,390 @@
-/* line 1, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 12, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+/* line 24, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+/* line 32, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+/* line 41, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+/* line 54, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 65, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+/* line 77, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+/* line 86, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+/* line 96, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 106, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+/* line 117, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+/* line 126, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 134, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 138, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+/* line 149, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+/* line 161, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/* line 177, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/* line 187, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+/* line 196, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+/* line 207, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+/* line 219, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+/* line 230, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+/* line 241, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+/* line 254, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+/* line 262, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+/* line 271, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+/* line 281, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 291, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+/* line 300, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 309, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+/* line 321, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+/* line 329, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+/* line 340, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+/* line 348, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 352, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* line 358, ../../Docs/Frontend/Github-projects/project13/scss/_reset.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 3, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 body {
   background: #FAFAFA;
   font: 12px/1.5 'Lato', sans-serif;
@@ -10,47 +396,48 @@ body {
   text-align: center;
 }
 
-/* line 12, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 14, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 a {
   text-decoration: none;
 }
 
-/* line 16, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 18, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 h1 {
-  font: 700 34px/1 'Lato', sans-serif;
+  font-size: 34px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 @media (min-width: 480px) {
-  /* line 16, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 18, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   h1 {
     font-size: 40px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 16, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 18, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   h1 {
     font-size: 60px;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 16, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 18, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   h1 {
     font-size: 72px;
+    margin: 130px 0 26px;
   }
 }
 
 @media (max-height: 450px) {
-  /* line 16, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 18, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   h1 {
     margin: 30px 0 0;
   }
 }
 
-/* line 39, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 42, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 h2 {
   font-size: 32px;
   color: #000000;
@@ -58,40 +445,47 @@ h2 {
 }
 
 @media (min-width: 1024px) {
-  /* line 39, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 42, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   h2 {
     font-size: 36px;
-    margin: 70px 0;
+    margin: 70px 0 40px 0;
   }
 }
 
-/* line 50, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 53, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 h3 {
   font-size: 18px;
   margin: 7px 0;
 }
 
-/* line 55, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+@media (min-width: 1024px) {
+  /* line 53, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  h3 {
+    margin: 10px 0 0;
+  }
+}
+
+/* line 62, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .wrapper {
   width: 100%;
   margin: 0;
 }
 
-/* line 60, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 67, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .container {
-  max-width: 1107px;
+  max-width: 1140px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
 @media (min-width: 1024px) {
-  /* line 60, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 67, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .container {
     padding: 0 15px;
   }
 }
 
-/* line 70, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 77, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header {
   display: flex;
   justify-content: space-between;
@@ -103,24 +497,24 @@ h3 {
   text-transform: uppercase;
 }
 
-/* line 80, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 87, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .header a {
   color: #FFFFFF;
 }
 
-/* line 90, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 93, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .logo img {
   width: 165px;
 }
 
 @media (min-width: 480px) {
-  /* line 90, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 93, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .logo img {
     width: auto;
   }
 }
 
-/* line 99, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 102, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .btn {
   cursor: pointer;
   background: transparent;
@@ -135,7 +529,7 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 99, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 102, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .btn {
     visibility: visible;
     top: 1px;
@@ -146,32 +540,32 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 99, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 102, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .btn {
     position: static;
     padding: 11px 28px;
   }
 }
 
-/* line 124, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 127, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .btn .btn-txt {
   display: none;
 }
 
 @media (min-width: 768px) {
-  /* line 124, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 127, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .btn .btn-txt {
     display: block;
   }
 }
 
-/* line 132, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 135, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .btn .btn-img {
   width: 29px;
 }
 
 @media (min-width: 768px) {
-  /* line 132, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 135, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .btn .btn-img {
     width: 0;
     display: none;
@@ -179,14 +573,14 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 144, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 147, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .btn:hover {
     background: #fff;
     color: #ED4C5C;
   }
 }
 
-/* line 154, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 156, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list {
   position: absolute;
   visibility: hidden;
@@ -203,7 +597,7 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 154, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 156, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .nav-list {
     visibility: visible;
     opacity: 100%;
@@ -212,53 +606,53 @@ h3 {
     width: 100%;
     border: none;
     display: flex;
-    padding: 0;
+    padding: 0 75px 0 0;
   }
 }
 
-/* line 179, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 181, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li.active {
   font-weight: 700;
 }
 
-/* line 183, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 185, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li.active a {
   text-shadow: none;
   cursor: default;
 }
 
-/* line 188, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 190, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li.active a:hover:after {
   width: 0%;
 }
 
-/* line 192, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 194, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list li {
   list-style: none;
   padding: 8px;
 }
 
 @media (min-width: 1024px) {
-  /* line 192, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 194, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .nav-list li {
     padding: 0 10px;
   }
 }
 
-/* line 202, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 204, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list a {
   font-size: 14px;
   position: relative;
 }
 
-/* line 207, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 209, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .nav-list a,
 .nav-list a:after {
   transition: none;
 }
 
 @media (min-width: 1024px) {
-  /* line 207, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 209, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .nav-list a,
   .nav-list a:after {
     transition: all .3s;
@@ -357,12 +751,12 @@ h3 {
   transition: opacity .4s;
 }
 
-/* line 301, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 300, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .main {
   flex-grow: 1;
 }
 
-/* line 305, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 304, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .firstscreen {
   background-image: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url(../images/bg-main.jpg);
   background-size: cover;
@@ -374,26 +768,39 @@ h3 {
   color: #fff;
 }
 
-/* line 315, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 314, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .firstscreen p {
   font-size: 16px;
   padding: 0 15px;
 }
 
-@media (min-width: 1024px) {
-  /* line 315, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+@media (min-width: 480px) {
+  /* line 314, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  .firstscreen p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 314, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .firstscreen p {
     font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* line 314, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  .firstscreen p {
     margin: 0;
   }
 }
 
-/* line 329, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 332, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .firstscreen .container {
   max-width: 540px;
 }
 
-/* line 336, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 338, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .signup-btn {
   padding: 10px 30px;
   background: #fff;
@@ -403,39 +810,41 @@ h3 {
   border-radius: 6px;
   display: inline-block;
   margin-top: 20px;
-  font: 700 12px 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
 }
 
-@media (min-width: 1024px) {
-  /* line 336, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+@media (min-width: 768px) {
+  /* line 338, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .signup-btn {
-    padding: 15px 54px;
+    padding: 17px 52px;
     font-size: 14px;
     margin-top: 56px;
   }
 }
 
 @media (max-height: 450px) {
-  /* line 336, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 338, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .signup-btn {
     margin-top: 0;
   }
 }
 
-/* line 360, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 363, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .signup-btn:hover {
   background: transparent;
   color: #fff;
   border: 1px solid #fff;
 }
 
-/* line 366, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 369, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .features {
   text-align: center;
 }
 
 @media (min-width: 768px) {
-  /* line 370, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 373, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .cards {
     display: flex;
     justify-content: space-between;
@@ -443,13 +852,13 @@ h3 {
 }
 
 @media (min-width: 1024px) {
-  /* line 370, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 373, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .cards {
     padding-top: 25px;
   }
 }
 
-/* line 384, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 386, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card {
   display: flex;
   flex-direction: column;
@@ -460,29 +869,28 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 384, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 386, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .card {
     width: 31%;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 384, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 386, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .card {
-    margin: 0 auto 80px;
+    margin: 0 auto 95px;
   }
 }
 
-/* line 403, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 404, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card h3 {
   padding: 28px 30px 13px;
   line-height: 1.2;
 }
 
-/* line 408, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 409, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card img {
-  border-radius: 10px;
-  width: 100%;
+  border-radius: 11px;
 }
 
 /* line 413, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
@@ -496,7 +904,7 @@ h3 {
 /* line 420, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .card-text p {
   margin: auto;
-  width: 71%;
+  width: 75%;
 }
 
 /* line 425, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
@@ -522,7 +930,14 @@ h3 {
   margin: 0;
 }
 
-/* line 444, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+@media (min-width: 1024px) {
+  /* line 438, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  .tech h2 {
+    margin: 40px 0;
+  }
+}
+
+/* line 449, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf {
   display: flex;
   flex-wrap: wrap;
@@ -530,102 +945,115 @@ h3 {
   padding-bottom: 40px;
 }
 
-/* line 451, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+@media (min-width: 1024px) {
+  /* line 449, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  .ksf {
+    justify-content: space-between;
+  }
+}
+
+/* line 460, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 20px auto 0;
+  margin: 20px 0 0;
+  line-height: 1.2;
 }
 
 @media (min-width: 480px) {
-  /* line 451, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 460, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .ksf-holder {
     width: 45%;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 451, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 460, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .ksf-holder {
     max-width: 255px;
-    margin-bottom: 104px;
     width: 25%;
   }
 }
 
-/* line 468, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 477, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder .big {
-  font: 700 100px 'Lato', sans-serif;
+  font-size: 100px;
+  font-weight: 700;
   color: rgba(16, 16, 16, 0.08);
 }
 
-/* line 473, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 483, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder img {
   width: 66px;
   max-height: 66px;
   margin-top: -60px;
 }
 
-/* line 479, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 489, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .ksf-holder p {
   padding: 0 15px;
-  line-height: 1.2;
 }
 
-/* line 486, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+@media (min-width: 1024px) {
+  /* line 489, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  .ksf-holder p {
+    padding: 0 15px 70px;
+  }
+}
+
+/* line 498, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer {
-  background: #FAFAFA;
   text-align: left;
   padding-top: 40px;
 }
 
 @media (min-width: 1024px) {
-  /* line 486, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 498, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer {
     padding-top: 80px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 495, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 506, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer h3 {
     margin: 7px 0 35px;
   }
 }
 
-/* line 504, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 513, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer ul {
   padding: 0;
 }
 
-/* line 508, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 517, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer li {
   list-style: none;
   padding: 0;
 }
 
 @media (min-width: 1024px) {
-  /* line 513, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 522, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer li a {
     margin: 0;
   }
 }
 
-/* line 521, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 530, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer a {
   display: block;
   color: #101010;
   margin-bottom: 5px;
 }
 
-/* line 527, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 536, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer a:hover {
   color: #ED4C5C;
 }
 
-/* line 533, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 542, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-flex {
   display: flex;
   margin-bottom: 50px;
@@ -634,73 +1062,74 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  /* line 533, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 542, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-flex {
     justify-content: flex-end;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 533, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 542, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-flex {
     justify-content: space-between;
+    margin-bottom: 90px;
   }
 }
 
-/* line 548, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 558, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-holder {
   width: 40%;
 }
 
 @media (min-width: 768px) {
-  /* line 548, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 558, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-holder {
     width: 33%;
   }
 }
 
 @media (min-width: 1024px) {
-  /* line 548, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 558, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .footer-holder {
     width: 25%;
   }
 }
 
-/* line 559, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 569, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-holder address {
   max-width: 175px;
   font-style: initial;
 }
 
-/* line 564, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 574, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .footer-holder > img {
   width: 100%;
   max-width: 215px;
 }
 
-/* line 573, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 583, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .icons a {
   display: inline;
 }
 
-/* line 577, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 587, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .icons img {
   margin: 10px 10px 0 0;
   width: 14px;
 }
 
-/* line 582, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 592, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .icons a img:hover {
   filter: drop-shadow(0 0 5px #000);
 }
 
-/* line 587, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+/* line 597, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
 .copy {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
-  /* line 587, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
+  /* line 597, ../../Docs/Frontend/Github-projects/project13/scss/style.scss */
   .copy {
     text-align: left;
   }

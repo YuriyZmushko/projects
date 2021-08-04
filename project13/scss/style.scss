@@ -1,3 +1,5 @@
+@import "reset";
+
 body {
     background: #FAFAFA;
     font: 12px/1.5 'Lato', sans-serif;
@@ -14,7 +16,7 @@ a {
 }
 
 h1 {
-    font: 700 34px/1 'Lato', sans-serif;
+    font-size: 34px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -28,6 +30,7 @@ h1 {
     
     @media (min-width: 1024px) {
         font-size: 72px;
+        margin: 130px 0 26px;
     }
 
     @media (max-height: 450px) {
@@ -43,13 +46,17 @@ h2 {
 
     @media (min-width: 1024px) {
         font-size: 36px;
-        margin: 70px 0;
+        margin: 70px 0 40px 0;
     }
 }
 
 h3 {
     font-size: 18px;
     margin: 7px 0;
+
+    @media (min-width: 1024px) {
+        margin: 10px 0 0;
+    }
 }
 
 .wrapper {
@@ -58,7 +65,7 @@ h3 {
 }
 
 .container {
-    max-width: 1107px;
+    max-width: 1140px;
     margin: 0 auto;
     padding: 0 25px;
 
@@ -79,11 +86,7 @@ h3 {
         
     a {
         color: #FFFFFF;
-        // padding: 0;
     }
-
-    
-    
 
 }
 
@@ -132,11 +135,11 @@ h3 {
     .btn-img {
         width: 29px;
         
-
         @media (min-width: 768px) {
             width: 0;
             display: none;
         }
+
     }
 
 }
@@ -149,7 +152,6 @@ h3 {
     }
     
 }
-
 
 .nav-list {
     position: absolute;
@@ -173,7 +175,7 @@ h3 {
         width: 100%;
         border: none;
         display: flex;
-        padding: 0;
+        padding: 0 75px 0 0;
     }
     
     li.active {
@@ -213,8 +215,6 @@ h3 {
         }
 
     }
-
-
     
     a::after {
        position: absolute;
@@ -297,7 +297,6 @@ h3 {
     transition: opacity .4s;
 }
 
-
 .main {
     flex-grow: 1;
 }
@@ -315,22 +314,25 @@ h3 {
     p {
         font-size: 16px;
         padding: 0 15px;
-        
-        
 
-        @media (min-width: 1024px) {
-            font-size: 24px;
-            margin: 0;
+        @media (min-width: 480px) {
+            font-size: 18px;
         }
 
+        @media (min-width: 768px) {
+            font-size: 24px;
+        }
+        
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
         
     }
 
     .container {
         max-width: 540px;
-
-
     }
+
 }
 
 .signup-btn {
@@ -342,10 +344,12 @@ h3 {
     border-radius: 6px;
     display: inline-block;
     margin-top: 20px;
-    font: 700 12px 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
 
-    @media (min-width: 1024px) {
-        padding: 15px 54px;
+    @media (min-width: 768px) {
+        padding: 17px 52px;
         font-size: 14px;
         margin-top: 56px;
     }
@@ -353,7 +357,6 @@ h3 {
     @media (max-height: 450px) {
         margin-top: 0;
     }
-
 
 }
 
@@ -368,7 +371,6 @@ h3 {
 }
 
 .cards {
-
       
     @media (min-width: 768px) {
         display: flex;
@@ -389,13 +391,12 @@ h3 {
     width: 90%;
     margin: 0 auto 65px;
     
-
     @media (min-width: 768px) {
         width: 31%;
     }
 
     @media (min-width: 1024px) {
-        margin: 0 auto 80px;
+        margin: 0 auto 95px;
     }
 
 }
@@ -406,8 +407,7 @@ h3 {
 }
 
 .card img {
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 11px;
 }
 
 .card-text {
@@ -419,7 +419,7 @@ h3 {
 
 .card-text p {
     margin: auto;
-    width: 71%;
+    width: 75%;
 }
 
 .card-text a {
@@ -438,7 +438,12 @@ h3 {
     h2 {
         padding-top: 40px;
         margin: 0;
+
+        @media (min-width: 1024px) {
+            margin: 40px 0;
+        }
     }
+    
 }
 
 .ksf {
@@ -446,6 +451,10 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 40px;
+
+    @media (min-width: 1024px) {
+        justify-content: space-between;
+    }
 }
 
 .ksf-holder {
@@ -453,7 +462,8 @@ h3 {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 20px auto 0;
+    margin: 20px 0 0;
+    line-height: 1.2;
 
     @media (min-width: 480px) {
         width: 45%;
@@ -461,12 +471,12 @@ h3 {
 
     @media (min-width: 1024px) {
         max-width: 255px;
-        margin-bottom: 104px;
         width: 25%;
     }
 
     .big {
-        font: 700 100px 'Lato', sans-serif;
+        font-size: 100px;
+        font-weight: 700;
         color: rgba(16, 16, 16, 0.08);
     }
 
@@ -478,13 +488,14 @@ h3 {
 
     p {
         padding: 0 15px;
-        line-height: 1.2;
+    
+        @media (min-width: 1024px) {
+            padding: 0 15px 70px;
+        }
     }
 }
 
-
 .footer {
-    background: #FAFAFA;
     text-align: left;
     padding-top: 40px;
 
@@ -493,8 +504,6 @@ h3 {
     }
 
     h3 {
-
-        
 
         @media (min-width: 768px) {
             margin: 7px 0 35px;
@@ -542,6 +551,7 @@ h3 {
 
     @media (min-width: 1024px) {
         justify-content: space-between;
+        margin-bottom: 90px;
     }
 }
 
@@ -580,7 +590,7 @@ h3 {
     }
 
     a img:hover {
-        filter: drop-shadow(0 0 5px #000);;
+        filter: drop-shadow(0 0 5px #000);
     }
 }
 
