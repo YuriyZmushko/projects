@@ -169,9 +169,10 @@ a {
 }
 
 .firstscreen {
-    background: url(../images/long-leg.svg), url(../images/firstscr-pattern.svg), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    background: url("../images/long-leg.svg"), url("../images/firstscr-pattern.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 60vh, 80vh, 100%;
     min-height: 100vh;
     display: inline-flex;
     flex-direction: column;

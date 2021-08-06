@@ -557,9 +557,10 @@ a {
 
 /* line 171, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .firstscreen {
-  background: url(../images/long-leg.svg), url(../images/firstscr-pattern.svg), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+  background: url("../images/long-leg.svg"), url("../images/firstscr-pattern.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 60vh, 80vh, 100%;
   min-height: 100vh;
   display: inline-flex;
   flex-direction: column;
@@ -567,12 +568,12 @@ a {
   text-align: center;
 }
 
-/* line 183, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 184, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .main-nav {
   text-align: right;
 }
 
-/* line 187, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 188, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .nav-list li {
   display: inline;
   list-style: none;
