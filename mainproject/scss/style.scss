@@ -105,26 +105,27 @@ a {
     top: 54px;
     align-items: center;
 
+    a, address {
+        color: #fff;
+    }
 
 }
 
 .head-inf {
     display: flex;
-    justify-content: center;
-
-    
+    flex-direction: column;
 }
 
 .head-contact {
 
     display: flex;
 
-    a, address {
+    &>a, address {
         position: relative;
         padding-left: 30px;
     }
 
-    a::before, address::before {
+    &>a::before, address::before {
         content: "";
         display: inline-block;
         width: 6px;
@@ -136,6 +137,10 @@ a {
         transform: translateY(-50%);
         left: 15px;
     }
+}
+
+.inf {
+    display: flex;
 }
 
 .lang li {
@@ -164,3 +169,12 @@ a {
 
 }
 
+.main-nav {
+    text-align: right;
+}
+
+.nav-list li {
+    display: inline;
+    list-style: none;
+    padding-left: 20px;
+}

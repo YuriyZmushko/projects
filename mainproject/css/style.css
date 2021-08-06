@@ -487,25 +487,30 @@ a {
   align-items: center;
 }
 
-/* line 111, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
-.head-inf {
-  display: flex;
-  justify-content: center;
+/* line 108, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.header a, .header address {
+  color: #fff;
 }
 
-/* line 118, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 114, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.head-inf {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 119, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .head-contact {
   display: flex;
 }
 
-/* line 122, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
-.head-contact a, .head-contact address {
+/* line 123, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.head-contact > a, .head-contact address {
   position: relative;
   padding-left: 30px;
 }
 
-/* line 127, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
-.head-contact a::before, .head-contact address::before {
+/* line 128, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.head-contact > a::before, .head-contact address::before {
   content: "";
   display: inline-block;
   width: 6px;
@@ -518,24 +523,29 @@ a {
   left: 15px;
 }
 
-/* line 141, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 142, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.inf {
+  display: flex;
+}
+
+/* line 146, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .lang li {
   list-style: none;
   display: inline;
   padding: 10px;
 }
 
-/* line 147, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 152, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .lang {
   margin: 0;
 }
 
-/* line 151, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 156, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .main {
   flex-grow: 1;
 }
 
-/* line 155, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 160, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .firstscreen {
   background: url(../images/long-leg.svg), url(../images/firstscr-pattern.svg), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
   background-position: center;
@@ -545,6 +555,18 @@ a {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+
+/* line 172, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.main-nav {
+  text-align: right;
+}
+
+/* line 176, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.nav-list li {
+  display: inline;
+  list-style: none;
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
