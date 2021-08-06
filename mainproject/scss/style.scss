@@ -122,7 +122,8 @@ a {
 
     &>a, address {
         position: relative;
-        padding-left: 30px;
+        margin-left: 30px;
+        font-style: initial;
     }
 
     &>a::before, address::before {
@@ -135,7 +136,8 @@ a {
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 15px;
+        left: -15px;
+        cursor: initial;
     }
 }
 
@@ -146,7 +148,16 @@ a {
 .lang li {
     list-style: none;
     display: inline;
-    padding: 10px;
+    padding: 4px 7px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+
+
+.lang .active {
+    background: #f0145a;
+    border-radius: 8px;
 }
 
 .lang {

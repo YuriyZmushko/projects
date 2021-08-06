@@ -506,10 +506,11 @@ a {
 /* line 123, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .head-contact > a, .head-contact address {
   position: relative;
-  padding-left: 30px;
+  margin-left: 30px;
+  font-style: initial;
 }
 
-/* line 128, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 129, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .head-contact > a::before, .head-contact address::before {
   content: "";
   display: inline-block;
@@ -520,32 +521,41 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 15px;
+  left: -15px;
+  cursor: initial;
 }
 
-/* line 142, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 144, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .inf {
   display: flex;
 }
 
-/* line 146, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 148, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .lang li {
   list-style: none;
   display: inline;
-  padding: 10px;
+  padding: 4px 7px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
-/* line 152, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 158, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+.lang .active {
+  background: #f0145a;
+  border-radius: 8px;
+}
+
+/* line 163, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .lang {
   margin: 0;
 }
 
-/* line 156, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 167, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .main {
   flex-grow: 1;
 }
 
-/* line 160, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 171, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .firstscreen {
   background: url(../images/long-leg.svg), url(../images/firstscr-pattern.svg), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
   background-position: center;
@@ -557,12 +567,12 @@ a {
   text-align: center;
 }
 
-/* line 172, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 183, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .main-nav {
   text-align: right;
 }
 
-/* line 176, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
+/* line 187, ../../Docs/Frontend/Github-projects/mainproject/scss/style.scss */
 .nav-list li {
   display: inline;
   list-style: none;
