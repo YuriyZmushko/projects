@@ -441,6 +441,7 @@ a {
 
 .wrapper {
   width: 100%;
+  position: relative;
 }
 
 .header {
@@ -450,6 +451,7 @@ a {
   left: 0;
   right: 0;
   top: 20px;
+  z-index: 1;
 }
 
 @media (min-width: 1024px) {
@@ -587,7 +589,7 @@ a {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  bottom: -90vh;
+  bottom: -93vh;
   right: 0;
   left: 0;
   padding: 0;
@@ -621,7 +623,7 @@ a {
 }
 
 .nav-list li:last-child {
-  margin: 11px 20px 80px;
+  margin: 11px 20px 100px;
 }
 
 @media (min-width: 1024px) {
