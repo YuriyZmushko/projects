@@ -589,13 +589,14 @@ a {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  bottom: -93vh;
+  bottom: -92vh;
   right: 0;
   left: 0;
   padding: 0;
   border-radius: 20px;
   background: #fff;
   background-position: center;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -623,7 +624,8 @@ a {
 }
 
 .nav-list li:last-child {
-  margin: 11px 20px 100px;
+  margin: 11px 20px 40px;
+  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -706,6 +708,7 @@ a {
   visibility: visible;
   opacity: 1;
   transition: opacity .4s;
+  overflow: hidden;
 }
 
 .firstscreen {
