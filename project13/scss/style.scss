@@ -1,9 +1,15 @@
 @import "reset";
 
+$primary-color: #fff;
+$secondary-color: #ed4c5c;
+
 body {
-    background: #FAFAFA;
+    background: $primary-color;
     font: 12px/1.5 'Lato', sans-serif;
     color: #101010;
+}
+
+body>.wrapper {
     display: flex;
     flex-direction: column;
     min-width: 320px;
@@ -19,41 +25,34 @@ h1 {
     font-size: 34px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     @media (min-width: 480px) {
         font-size: 40px;
     }
-    
     @media (min-width: 768px) {
         font-size: 60px;
     }
-    
     @media (min-width: 1024px) {
         font-size: 72px;
         margin: 130px 0 26px;
     }
-
     @media (max-height: 450px) {
         margin: 30px 0 0;
     }
-
 }
 
 h2 {
     font-size: 32px;    
     color: #000000;
     margin: 40px 0;
-
     @media (min-width: 1024px) {
         font-size: 36px;
-        margin: 70px 0 40px 0;
+        margin: 70px 0 40px;
     }
 }
 
 h3 {
     font-size: 18px;
     margin: 7px 0;
-
     @media (min-width: 1024px) {
         margin: 10px 0 0;
     }
@@ -68,7 +67,6 @@ h3 {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 25px;
-
     @media (min-width: 1024px) {
         padding: 0 15px;
     }
@@ -83,26 +81,23 @@ h3 {
     top: 30px;
     right: 0px;
     text-transform: uppercase;
-        
+    
     a {
-        color: #FFFFFF;
+        color: $primary-color;
     }
-
 }
 
 .logo img {
     width: 165px;
-
     @media (min-width: 480px) {
-        width: auto;
+        width: 172px;
     }
-
 }
 
 .btn {
     cursor: pointer;
     background: transparent;
-    color: #fff;
+    color: $primary-color;
     font-size: 14px;
     text-transform: uppercase;
     border: none;
@@ -110,15 +105,13 @@ h3 {
     position: absolute;
     top: -1px;
     right: 71px;
-    
     @media (min-width: 768px) {
         visibility: visible;
         top: 1px;
         right: 90px;
         padding: 5px 20px;
-        border: 1px solid #fff;
+        border: 1px solid $primary-color;
     }
-
     @media (min-width: 1024px) {
         position: static;
         padding: 11px 28px;
@@ -126,7 +119,6 @@ h3 {
 
     .btn-txt {
         display: none;
-
         @media (min-width: 768px) {
             display: block;
         }
@@ -134,23 +126,18 @@ h3 {
 
     .btn-img {
         width: 29px;
-        
         @media (min-width: 768px) {
             width: 0;
             display: none;
         }
-
     }
-
 }
 
 .btn:hover {
-
     @media (min-width: 768px) {
-        background: #fff;
-        color: #ED4C5C;
+        background: $primary-color;
+        color: $secondary-color;
     }
-    
 }
 
 .nav-list {
@@ -165,11 +152,10 @@ h3 {
     background-image: linear-gradient(90deg, rgba(86, 15, 30, 0.8) 0%, rgba(152, 40, 17, 0.8) 100%), url(../images/bg-main.jpg);
     background-size: cover;
     background-position: center;
-    border: 3px solid #fff;
-     
+    border: 3px solid $primary-color;
     @media (min-width: 1024px) {
         visibility: visible;
-        opacity: 100%;
+        opacity: 1;
         position: static;
         background: transparent;
         width: 100%;
@@ -194,11 +180,9 @@ h3 {
     li {
         list-style: none;
         padding: 8px;
-
         @media (min-width: 1024px) {
             padding: 0 10px;
         }
-
     }
 
     a {
@@ -208,12 +192,9 @@ h3 {
     
     a,
     a:after {
-        transition: none;
-    
         @media (min-width: 1024px) {
             transition: all .3s;
         }
-
     }
     
     a::after {
@@ -223,7 +204,7 @@ h3 {
        right: 0;
        width: 0%;
        content: '';
-       background: #fff;
+       background: $primary-color;
        height: 1px;
     }
 
@@ -232,9 +213,8 @@ h3 {
     }
 
     a:hover {
-        text-shadow: 1px 0 1px #fff;
+        text-shadow: 1px 0 1px $primary-color;
     }
-       
 }
 
 
@@ -250,11 +230,9 @@ h3 {
     right: 25px;
     width: 30px;
     height: 30px;
-
     @media (min-width: 1024px) {
         visibility: hidden;
     }
-
 }
 
 .menu-btn>span, .menu-btn>span::after, .menu-btn>span::before {
@@ -262,7 +240,7 @@ h3 {
     position: absolute;
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background-color: $primary-color;
 }
 
 .menu-btn>span::after {
@@ -293,7 +271,7 @@ h3 {
 
 #menu-toggle:checked ~ .nav-list {
     visibility: visible;
-    opacity: 100%;
+    opacity: 1;
     transition: opacity .4s;
 }
 
@@ -309,61 +287,53 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    color: $primary-color;
 
     p {
         font-size: 16px;
         padding: 0 15px;
-
         @media (min-width: 480px) {
             font-size: 18px;
         }
-
         @media (min-width: 768px) {
             font-size: 24px;
         }
-        
         @media (min-width: 1024px) {
             margin: 0;
         }
-        
     }
 
     .container {
         max-width: 540px;
     }
-
 }
 
 .signup-btn {
     padding: 10px 30px;
-    background: #fff;
-    color: #ED4C5C;
+    background: $primary-color;
+    color: $secondary-color;
     text-transform: uppercase;
-    border: 1px solid #fff;
+    border: 1px solid $primary-color;
     border-radius: 6px;
     display: inline-block;
     margin-top: 20px;
     font-size: 12px;
     font-weight: 700;
     line-height: 1;
-
     @media (min-width: 768px) {
         padding: 17px 52px;
         font-size: 14px;
         margin-top: 56px;
     }
-
     @media (max-height: 450px) {
         margin-top: 0;
     }
-
 }
 
 .signup-btn:hover {
     background: transparent;
-    color: #fff;
-    border: 1px solid #fff;
+    color: $primary-color;
+    border: 1px solid $primary-color;
 }
 
 .features {
@@ -371,16 +341,13 @@ h3 {
 }
 
 .cards {
-      
     @media (min-width: 768px) {
         display: flex;
         justify-content: space-between;
     }
-
     @media (min-width: 1024px) {
         padding-top: 25px;
     }
-
 }
 
 .card {
@@ -390,15 +357,12 @@ h3 {
     max-width: 400px;
     width: 90%;
     margin: 0 auto 65px;
-    
     @media (min-width: 768px) {
         width: 31%;
     }
-
     @media (min-width: 1024px) {
         margin: 0 auto 95px;
     }
-
 }
 
 .card h3 {
@@ -412,7 +376,7 @@ h3 {
 
 .card-text {
     width: 83%;
-    background: #fff;
+    background: $primary-color;
     border-radius: 10px;
     margin-top: -88px;
 }
@@ -425,7 +389,7 @@ h3 {
 .card-text a {
     margin: 25px 0;
     display: inline-block;
-    color: #ED4C5C;
+    color: $secondary-color;
 }
 
 .card-text a:hover {
@@ -433,17 +397,15 @@ h3 {
 } 
 
 .tech {
-    background: #fff;
+    background: $primary-color;
 
     h2 {
-        padding-top: 40px;
+        padding-top: 55px;
         margin: 0;
-
         @media (min-width: 1024px) {
             margin: 40px 0;
         }
     }
-    
 }
 
 .ksf {
@@ -451,7 +413,6 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 40px;
-
     @media (min-width: 1024px) {
         justify-content: space-between;
     }
@@ -464,11 +425,9 @@ h3 {
     width: 100%;
     margin: 20px 0 0;
     line-height: 1.2;
-
     @media (min-width: 480px) {
         width: 45%;
     }
-
     @media (min-width: 1024px) {
         max-width: 255px;
         width: 25%;
@@ -488,7 +447,6 @@ h3 {
 
     p {
         padding: 0 15px;
-    
         @media (min-width: 1024px) {
             padding: 0 15px 70px;
         }
@@ -498,13 +456,11 @@ h3 {
 .footer {
     text-align: left;
     padding-top: 40px;
-
     @media (min-width: 1024px) {
         padding-top: 80px;
     }
 
     h3 {
-
         @media (min-width: 768px) {
             margin: 7px 0 35px;
         }
@@ -520,11 +476,9 @@ h3 {
     }
 
     li a {
-
         @media (min-width: 1024px) {
             margin: 0;
         }
-        
     }
 
     a {
@@ -534,9 +488,8 @@ h3 {
     }
 
     a:hover {
-        color: #ED4C5C;
+        color: $secondary-color;
     }
-
 }
 
 .footer-flex {
@@ -544,30 +497,21 @@ h3 {
     margin-bottom: 50px;
     flex-wrap: wrap;
     justify-content: space-between;
-
-    @media (min-width: 768px) {
-        justify-content: flex-end;
-    }
-
     @media (min-width: 1024px) {
-        justify-content: space-between;
         margin-bottom: 90px;
     }
 }
 
+
+
 .footer-holder {
     width: 40%;
-
     @media (min-width: 768px) {
-        width: 33%;
-    }
-
-    @media (min-width: 1024px) {
         width: 25%;
     }
 
     address {
-        max-width: 175px;
+        max-width: 75%;
         font-style: initial;
     }
 
@@ -576,6 +520,7 @@ h3 {
         max-width: 215px;
     }
 }
+
 
 
 .icons {
@@ -595,11 +540,8 @@ h3 {
 }
 
 .copy {
-    text-align: center;
-    
     @media (min-width: 1024px) {
         text-align: left;
     }
-
 }
 
