@@ -426,6 +426,11 @@ h2 {
   }
 }
 
+h3.caps {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
 }
@@ -449,11 +454,16 @@ a {
 }
 
 .hero {
-  font-size: 42px;
+  font: 700 32px/1.2 'TT Norms', sans-serif;
   background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight: 700;
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    font-size: 42px;
+  }
 }
 
 .header {
@@ -828,11 +838,10 @@ a {
 
 .secondscreen {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
-  background-size: 100% 1400px;
   background-position: center;
   background-repeat: no-repeat;
-  height: 1400px;
   color: #fff;
+  border-radius: 0 0 12px 12px;
 }
 
 .secondscreen .txt-slider {
@@ -852,50 +861,6 @@ a {
   color: #fff;
 }
 
-.secondscreen .utp {
-  display: flex;
-  padding: 0;
-}
-
-@media (min-width: 1024px) {
-  .secondscreen .utp {
-    width: 45%;
-    text-align: right;
-    border-right: 4px solid #e6e6f0;
-    display: block;
-  }
-}
-
-.secondscreen a {
-  font-size: 0;
-}
-
-@media (min-width: 1024px) {
-  .secondscreen a {
-    color: #b3b3ba;
-    font-weight: 700;
-    font-size: 42px;
-  }
-}
-
-.secondscreen a:hover {
-  background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@media (min-width: 1024px) {
-  .secondscreen a::after, .secondscreen li.active::after {
-    content: '';
-    position: absolute;
-    width: 4px;
-    height: 0;
-    background: #f0145a;
-    top: 0;
-    right: -4px;
-  }
-}
-
 @media (min-width: 1024px) {
   .secondscreen li.active::after {
     height: 100%;
@@ -911,39 +876,6 @@ a {
 @media (min-width: 1024px) {
   .secondscreen a:hover:after {
     height: 100%;
-  }
-}
-
-.secondscreen li {
-  list-style: none;
-  justify-content: center;
-  width: 16px;
-  height: 16px;
-  background: #24a3ff;
-  margin: 7px;
-  display: flex;
-  border-radius: 50%;
-}
-
-@media (min-width: 1024px) {
-  .secondscreen li {
-    padding-right: 40px;
-    position: relative;
-    display: block;
-    width: auto;
-    height: auto;
-    background: none;
-    margin: 0;
-  }
-}
-
-.secondscreen li:not(.active) {
-  opacity: .2;
-}
-
-@media (min-width: 1024px) {
-  .secondscreen li:not(.active) {
-    opacity: 1;
   }
 }
 
@@ -966,6 +898,83 @@ a {
   }
 }
 
+.utp {
+  display: flex;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .utp {
+    width: 45%;
+    text-align: right;
+    border-right: 4px solid #e6e6f0;
+    display: block;
+  }
+}
+
+.utp a {
+  font-size: 0;
+}
+
+@media (min-width: 1024px) {
+  .utp a {
+    color: #b3b3ba;
+    font-weight: 700;
+    font-size: 42px;
+  }
+}
+
+.utp a:hover {
+  background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 1024px) {
+  .utp a::after, .utp li.active::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 0;
+    background: #f0145a;
+    top: 0;
+    right: -4px;
+  }
+}
+
+.bullet li, .bullet li.active {
+  list-style: none;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: #24a3ff;
+  margin: 7px;
+  display: flex;
+  border-radius: 50%;
+}
+
+@media (min-width: 1024px) {
+  .bullet li, .bullet li.active {
+    padding-right: 40px;
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    margin: 0;
+  }
+}
+
+li:not(.active) {
+  opacity: .2;
+}
+
+@media (min-width: 1024px) {
+  li:not(.active) {
+    opacity: 1;
+  }
+}
+
 .subtitle {
   text-transform: uppercase;
   font-size: 14px;
@@ -976,5 +985,34 @@ a {
 @media (min-width: 1024px) {
   .subtitle {
     display: none;
+  }
+}
+
+.services .caps a {
+  color: #fff;
+  opacity: .5;
+}
+
+.services .caps a:hover {
+  opacity: 1;
+}
+
+.services h3 {
+  color: #24a3ff;
+}
+
+.serv-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.serv-menu .item {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .serv-menu .item {
+    width: 32%;
   }
 }
