@@ -965,12 +965,12 @@ a {
   }
 }
 
-li:not(.active) {
+.bullet li:not(.active) {
   opacity: .2;
 }
 
 @media (min-width: 1024px) {
-  li:not(.active) {
+  .bullet li:not(.active) {
     opacity: 1;
   }
 }

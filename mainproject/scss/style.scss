@@ -161,12 +161,13 @@
     }
 }
 
-li:not(.active) {
+.bullet li:not(.active) {
     opacity: .2;
     @media (min-width: 1024px) {
         opacity: 1;
     }
 }
+
 
 .subtitle {
     text-transform: uppercase;
