@@ -497,6 +497,7 @@ a {
         margin: 0;
         width: 45%;
         text-align: right;
+        border-right: 4px solid #e6e6f0;
     }
 
     a {
@@ -509,6 +510,17 @@ a {
     li {
         list-style: none;
         padding-right: 40px;
+        position: relative;
+    }
+
+    li.active::after {
+        content: '';
+        position: absolute;
+        width: 4px;
+        height: 50px;
+        background: #f0145a;
+        top: 0;
+        right: -4px;
     }
 
     .utp-detail {
