@@ -589,11 +589,11 @@ a {
   position: absolute;
   visibility: hidden;
   opacity: 0;
-  bottom: -92vh;
+  bottom: -85vh;
   right: 0;
   left: 0;
   padding: 0;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   background: #fff;
   background-position: center;
   overflow: hidden;
