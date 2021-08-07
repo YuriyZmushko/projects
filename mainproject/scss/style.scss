@@ -253,7 +253,7 @@ a {
     right: 0;
     left: 0;
     margin: 0;
-    padding: 40px 0 0;
+    padding: 50px 0 0;
     border-radius: 20px 20px 0 0;
     background: #fff;
     background-position: center;
@@ -376,7 +376,7 @@ a {
     align-items: center;
     position: absolute;
     z-index: 5;
-    top: 15px;
+    top: 20px;
     right: 20px;
     width: 18px;
     height: 18px;
@@ -388,7 +388,7 @@ a {
 
 
 .second>span, .second>span::after, .second>span::before {
-    background-color: rgb(255, 132, 0);
+    background-color: #ec6f5d;
     z-index: 5;
     display: block;
     position: absolute;
