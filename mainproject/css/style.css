@@ -586,17 +586,17 @@ a {
 }
 
 .nav-list {
-  position: absolute;
+  position: fixed;
   visibility: hidden;
   opacity: 0;
-  bottom: -85vh;
+  bottom: 0;
   right: 0;
   left: 0;
+  margin: 0;
   padding: 0;
   border-radius: 20px 20px 0 0;
   background: #fff;
   background-position: center;
-  overflow: hidden;
 }
 
 @media (min-width: 1024px) {
@@ -624,8 +624,7 @@ a {
 }
 
 .nav-list li:last-child {
-  margin: 11px 20px 40px;
-  overflow: hidden;
+  margin: 11px 20px 20px;
 }
 
 @media (min-width: 1024px) {
@@ -730,8 +729,4 @@ a {
     background-position: center;
     background-repeat: no-repeat;
   }
-}
-
-#menu-toggle:checked ~ .firstscreen {
-  background: rgba(50, 49, 49, 0.8), url("../images/long-leg.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
 }
