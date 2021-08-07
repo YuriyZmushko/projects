@@ -253,7 +253,7 @@ a {
     right: 0;
     left: 0;
     margin: 0;
-    padding: 0;
+    padding: 40px 0 0;
     border-radius: 20px 20px 0 0;
     background: #fff;
     background-position: center;
@@ -288,7 +288,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(50, 49, 49, 0.8);
+    background: rgba(50, 49, 49, 0.6);
     width: 100%;
     height: 100vh;
    
@@ -353,7 +353,7 @@ a {
     align-items: center;
     position: absolute;
     top: 63px;
-    right: 15px;
+    right: 20px;
     width: 18px;
     height: 18px;
     @media (min-width: 1024px) {
@@ -361,12 +361,47 @@ a {
     }
 }
 
+
+
 .menu-btn>span, .menu-btn>span::after, .menu-btn>span::before {
     display: block;
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: #fff;
+}
+
+.second {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    top: 15px;
+    right: 20px;
+    width: 18px;
+    height: 18px;
+    @media (min-width: 1024px) {
+        visibility: hidden;
+    }
+}
+
+
+
+.second>span, .second>span::after, .second>span::before {
+    background-color: rgb(255, 132, 0);
+    z-index: 5;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    transform: rotate(45deg);
+    
+}
+
+.second>span::after {
+    content: "";
+    transform: rotate(90deg);
+    
 }
 
 .menu-btn>span::after {
@@ -380,19 +415,15 @@ a {
 }
 
 #menu-toggle:checked ~ .menu-btn>span {
-    transform: rotate(45deg);
-    transition: transform 0.3s linear;
+    background: #848383;
 }
 
 #menu-toggle:checked ~ .menu-btn>span::before {
-    top: 0;
-    transform: rotate(0);
+    background: #848383;
 }
 
 #menu-toggle:checked ~ .menu-btn>span::after {
-    top: 0;
-    transform: rotate(90deg);
-    transition: transform 0.3s linear;
+    background: #848383;
 }
 
 #menu-toggle:checked ~ .nav-list {
@@ -404,8 +435,8 @@ a {
 
 .firstscreen {
     background: url("../images/long-leg.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
-    background-size: 50vh, 100%;
-    background-position: center;
+    background-size: 80vh, 100%;
+    background-position: bottom center;
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
