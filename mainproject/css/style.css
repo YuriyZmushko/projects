@@ -421,6 +421,7 @@ h1 {
   background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 
 a {
@@ -567,7 +568,7 @@ a {
   font-size: 12px;
 }
 
-.lang .active {
+.lang li.active {
   background: #f0145a;
   border-radius: 8px;
 }
@@ -611,12 +612,12 @@ a {
   }
 }
 
-.nav-list .active a {
+.nav-list li.active a {
   color: #f0145a;
 }
 
 @media (min-width: 1024px) {
-  .nav-list .active a {
+  .nav-list li.active a {
     color: #fff;
     cursor: default;
   }
@@ -811,5 +812,46 @@ a {
 }
 
 .scroll a {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.secondscreen {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  background-size: 100% 1400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 1400px;
+  color: #fff;
+}
+
+.secondscreen .txt-slider {
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.secondscreen h2 {
+  color: #fff;
+}
+
+.secondscreen .utp {
+  margin: 0;
+  width: 45%;
+  text-align: right;
+}
+
+.secondscreen a {
+  color: #b3b3ba;
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.secondscreen li {
+  list-style: none;
+  padding-right: 40px;
+}
+
+.secondscreen .utp-detail {
+  width: 55%;
+  padding: 0 200px 0 40px;
 }
