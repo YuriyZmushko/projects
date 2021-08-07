@@ -607,6 +607,7 @@ a {
     background: transparent;
     width: 100%;
     border: none;
+    padding: 0 0 0 10px;
   }
 }
 
@@ -787,8 +788,28 @@ a {
 @media (min-width: 1024px) {
   .firstscreen {
     background: url("../images/long-leg.svg"), url("../images/firstscr-pattern.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
-    background-size: 50vh, 80vh, 100%;
-    background-position: center;
+    background-size: 80vh, 80vh, 100%;
+    background-position: bottom, center, center;
     background-repeat: no-repeat;
   }
+}
+
+.scroll {
+  background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.scroll .img {
+  width: 42px;
+}
+
+.scroll a {
+  padding-bottom: 20px;
 }
