@@ -416,12 +416,14 @@ h1 {
   font-size: 38px;
 }
 
-.hero {
-  font-size: 42px;
-  background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: 700;
+h2 {
+  font-size: 22px;
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+  }
 }
 
 a {
@@ -443,6 +445,15 @@ a {
 .wrapper {
   width: 100%;
   position: relative;
+  min-width: 320px;
+}
+
+.hero {
+  font-size: 42px;
+  background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
 }
 
 .header {
@@ -643,6 +654,16 @@ a {
   border-radius: 12px;
 }
 
+@media (min-width: 1024px) {
+  .nav-list li {
+    display: inline;
+    padding: 0 0 0 20px;
+    text-align: left;
+    background: transparent;
+    margin: 0;
+  }
+}
+
 .nav-list li:nth-child(1) {
   margin: 64px 20px 11px;
 }
@@ -659,16 +680,6 @@ a {
 
 @media (min-width: 1024px) {
   .nav-list li:last-child {
-    margin: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .nav-list li {
-    display: inline;
-    padding: 0 0 0 20px;
-    text-align: left;
-    background: transparent;
     margin: 0;
   }
 }
@@ -826,8 +837,15 @@ a {
 
 .secondscreen .txt-slider {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
-  padding-top: 80px;
+}
+
+@media (min-width: 1024px) {
+  .secondscreen .txt-slider {
+    padding-top: 80px;
+    flex-direction: row;
+  }
 }
 
 .secondscreen h2 {
@@ -835,16 +853,29 @@ a {
 }
 
 .secondscreen .utp {
-  margin: 0;
-  width: 45%;
-  text-align: right;
-  border-right: 4px solid #e6e6f0;
+  display: flex;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .secondscreen .utp {
+    width: 45%;
+    text-align: right;
+    border-right: 4px solid #e6e6f0;
+    display: block;
+  }
 }
 
 .secondscreen a {
-  color: #b3b3ba;
-  font-weight: 700;
-  font-size: 42px;
+  font-size: 0;
+}
+
+@media (min-width: 1024px) {
+  .secondscreen a {
+    color: #b3b3ba;
+    font-weight: 700;
+    font-size: 42px;
+  }
 }
 
 .secondscreen a:hover {
@@ -853,39 +884,97 @@ a {
   -webkit-text-fill-color: transparent;
 }
 
-.secondscreen a::after, .secondscreen li.active::after {
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 0;
-  background: #f0145a;
-  top: 0;
-  right: -4px;
+@media (min-width: 1024px) {
+  .secondscreen a::after, .secondscreen li.active::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 0;
+    background: #f0145a;
+    top: 0;
+    right: -4px;
+  }
 }
 
-.secondscreen li.active::after {
-  height: 100%;
+@media (min-width: 1024px) {
+  .secondscreen li.active::after {
+    height: 100%;
+  }
 }
 
-.secondscreen a, .secondscreen a:after {
-  transition: all .8s;
+@media (min-width: 1024px) {
+  .secondscreen a:after {
+    transition: all .8s;
+  }
 }
 
-.secondscreen a:hover:after {
-  height: 100%;
+@media (min-width: 1024px) {
+  .secondscreen a:hover:after {
+    height: 100%;
+  }
 }
 
 .secondscreen li {
   list-style: none;
-  padding-right: 40px;
-  position: relative;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  background: #24a3ff;
+  margin: 7px;
+  display: flex;
+  border-radius: 50%;
 }
 
-.secondscreen li.active a {
+@media (min-width: 1024px) {
+  .secondscreen li {
+    padding-right: 40px;
+    position: relative;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+    margin: 0;
+  }
+}
+
+.secondscreen li:not(.active) {
+  opacity: .2;
+}
+
+@media (min-width: 1024px) {
+  .secondscreen li:not(.active) {
+    opacity: 1;
+  }
+}
+
+.secondscreen li.active a, .secondscreen .subtitle {
   cursor: default;
+  background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .secondscreen .utp-detail {
-  width: 55%;
-  padding: 0 200px 0 40px;
+  font-size: 18px;
+}
+
+@media (min-width: 1024px) {
+  .secondscreen .utp-detail {
+    width: 55%;
+    padding: 0 200px 0 40px;
+    font-size: 21px;
+  }
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .subtitle {
+    display: none;
+  }
 }
