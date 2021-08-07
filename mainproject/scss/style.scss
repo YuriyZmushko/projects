@@ -270,7 +270,28 @@ a {
         // padding: 0 75px 0 0;
     }
 
+    .active a {
+        color: #f0145a;
+        @media (min-width: 1024px) {
+            color: #fff;
+            cursor: default;
+        }
+        
+    }
+
     
+}
+
+#menu-toggle:checked ~ .menu-btn::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(50, 49, 49, 0.8);
+    width: 100%;
+    height: 100vh;
+   
 }
 
 .nav-list li {
@@ -284,10 +305,16 @@ a {
     
     &:nth-child(1) {
         margin: 64px 20px 11px;
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
     }
 
     &:last-child {
         margin: 11px 20px 20px;
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
     }
 
     
