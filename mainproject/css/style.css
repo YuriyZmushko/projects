@@ -1175,16 +1175,25 @@ a {
   border-left: 2px solid #fff;
 }
 
+.case-holder h3 {
+  color: #686887;
+}
+
+.case-holder p {
+  color: #b3b3ba;
+}
+
 .case-holder .caps {
   color: #f0145a;
   border-bottom: 2px solid #fff;
   margin: 0;
   padding: 20px;
+  margin-bottom: 30px;
 }
 
 .case-holder h3, .case-holder p {
   margin: 0;
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .case-holder:nth-child(1) {
