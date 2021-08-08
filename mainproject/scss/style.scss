@@ -392,3 +392,99 @@
         width: 42%;
     }
 }
+
+.trust {
+    text-align: center;
+    
+    .caps {
+        color: #323264;
+        margin: 30px 0;
+    }
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    
+    .logo-holder {
+        width: 50%;
+        // padding: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90px;
+        @media (min-width: 1024px) {
+            width: 25%;
+            height: 120px;
+        }
+
+        a {
+            line-height: 0;
+        }
+
+
+        img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+    }
+}
+
+.publications {
+    background: #f5f5fa;
+    height: 920px;
+    overflow: hidden;
+    @media (min-width: 1024px) {
+        height: 870px;
+    }
+
+
+    a {
+        color: #24a3ff;
+    }
+
+    .caps {
+        padding: 40px 0 20px;
+        margin: 0;
+
+    }
+}
+
+.pub-board {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pub-column {
+    width: 100%;
+    @media (min-width: 1024px) {
+        width: 31%;
+    }
+
+    .article {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 20px 0;
+
+        
+    }
+
+    .date {
+        text-transform: uppercase;
+        display: block;
+        font-size: 14px;
+        font-weight: 700;
+        color: #b3b3ba;
+        
+        @media (min-width: 1024px) {
+            border-bottom: 4px solid #e6e6f0;
+        }
+    }
+
+    p, h4, .date {
+        padding: 5px 0 20px;
+        margin: 20px;
+    }
+}
