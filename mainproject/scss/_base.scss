@@ -89,6 +89,10 @@ h2 {
     }
 }
 
+h3 {
+
+}
+
 h3.caps {
     font-size: 14px;
     text-transform: uppercase;
@@ -148,15 +152,20 @@ a {
     padding: 0;
 }
 
-.bullet li, .bullet li.active {
+.bullet li, .bullet li.active,  {
     list-style: none;
     width: 16px;
     height: 16px;
     background: #24a3ff;
     margin: 7px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .bullet li:not(.active) {
     opacity: .2;
+}
+
+.bullet li:hover {
+    opacity: 1;
 }
