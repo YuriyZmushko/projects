@@ -159,11 +159,12 @@ a {
     background: #24a3ff;
     margin: 7px;
     border-radius: 50%;
-    cursor: pointer;
+    
 }
 
 .bullet li:not(.active) {
     opacity: .2;
+    cursor: pointer;
 }
 
 .bullet li:hover {
