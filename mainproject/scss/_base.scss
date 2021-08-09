@@ -89,15 +89,6 @@ h2 {
     }
 }
 
-h3 {
-
-}
-
-h3.caps {
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
 h4 {
     font-weight: normal;
     font-size: 18px;
@@ -131,6 +122,10 @@ a {
     @media (min-width: 1024px) {
         font-size: 42px;
     }
+}
+
+address {
+    font-style: initial;
 }
 
 .clearfix:after {
@@ -169,4 +164,15 @@ a {
 
 .bullet li:hover {
     opacity: 1;
+}
+
+.caps {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+a {
+    color: #24a3ff;
+
 }

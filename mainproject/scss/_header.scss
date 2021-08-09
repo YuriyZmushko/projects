@@ -40,13 +40,14 @@
     }
 }
 
+
+
 .head-contact {
     display: flex;
     align-items: center;
 
     &>a, address {
         position: relative;
-        font-style: initial;
         color: #b3b3ba;
         font-size: 16px;
         @media (min-width: 1024px) {
