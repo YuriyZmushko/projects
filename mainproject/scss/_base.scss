@@ -176,3 +176,20 @@ a {
     color: #24a3ff;
 
 }
+
+h3.caps a {
+    position: relative;
+
+}
+
+h3.caps a::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transform: rotate(-45deg) translateY(100%);
+    position: absolute;
+    top: 0;
+    right: -5px;
+}

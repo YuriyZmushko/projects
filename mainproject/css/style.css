@@ -523,6 +523,22 @@ a {
   color: #24a3ff;
 }
 
+h3.caps a {
+  position: relative;
+}
+
+h3.caps a::after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: rotate(-45deg) translateY(100%);
+  position: absolute;
+  top: 0;
+  right: -5px;
+}
+
 .header {
   display: flex;
   flex-direction: column-reverse;
@@ -901,48 +917,6 @@ a {
   border-radius: 0 0 12px 12px;
 }
 
-.secondscreen .txt-slider {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-}
-
-@media (min-width: 1024px) {
-  .secondscreen .txt-slider {
-    padding-top: 80px;
-    flex-direction: row;
-  }
-}
-
-.secondscreen h2 {
-  color: #fff;
-}
-
-@media (min-width: 1024px) {
-  .secondscreen li.active::after {
-    height: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .secondscreen a:after {
-    transition: all .8s;
-  }
-}
-
-@media (min-width: 1024px) {
-  .secondscreen a:hover:after {
-    height: 100%;
-  }
-}
-
-.secondscreen li.active a, .secondscreen .subtitle {
-  cursor: default;
-  background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .secondscreen .utp-detail {
   font-size: 18px;
 }
@@ -959,6 +933,48 @@ a {
   .secondscreen .bullet li:not(.active) {
     opacity: 1;
   }
+}
+
+.txt-slider {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .txt-slider {
+    padding-top: 80px;
+    flex-direction: row;
+  }
+}
+
+.txt-slider h2 {
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .txt-slider li.active::after {
+    height: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .txt-slider a:after {
+    transition: all .8s;
+  }
+}
+
+@media (min-width: 1024px) {
+  .txt-slider a:hover:after {
+    height: 100%;
+  }
+}
+
+.txt-slider li.active a, .txt-slider .subtitle {
+  cursor: default;
+  background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .utp {
@@ -1323,6 +1339,11 @@ a {
 .publications .caps {
   padding: 40px 0 20px;
   margin: 0;
+}
+
+.pub-intro h3.caps a::after, .member-text h3.caps a::after {
+  border-right: 2px solid #24a3ff;
+  border-bottom: 2px solid #24a3ff;
 }
 
 .pub-board {
