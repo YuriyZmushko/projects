@@ -1470,12 +1470,6 @@ h3.caps a::after {
   position: relative;
 }
 
-@media (min-width: 1024px) {
-  .publications {
-    height: 870px;
-  }
-}
-
 .publications a {
   color: #24a3ff;
 }
@@ -1493,7 +1487,7 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .pub-board {
     overflow: hidden;
-    height: 720px;
+    max-height: 900px;
   }
 }
 
@@ -1508,30 +1502,27 @@ h3.caps a::after {
 }
 
 .pub-column {
-  display: flex;
-  flex-direction: column;
-  break-inside: avoid-column;
+  max-height: 800px;
 }
 
 @media (min-width: 1024px) {
   .pub-column {
-    flex-wrap: wrap;
-    height: 1400px;
-    align-content: space-between;
+    columns: 3;
+    max-height: 1300px;
+    column-gap: 40px;
   }
 }
 
 .pub-column .article {
   background: #fff;
   border-radius: 8px;
-  margin: 20px 0;
-  width: 100%;
+  margin: 0 0 40px 0;
+  break-inside: avoid-column;
+  overflow: hidden;
 }
 
-@media (min-width: 1024px) {
-  .pub-column .article {
-    width: 31%;
-  }
+.pub-column .article img {
+  width: 100%;
 }
 
 .pub-column .date {
@@ -1549,8 +1540,8 @@ h3.caps a::after {
 }
 
 .pub-column p, .pub-column h4, .pub-column .date {
-  padding: 5px 0 20px;
-  margin: 20px;
+  padding: 10px 0 20px;
+  margin: 0 20px;
 }
 
 .more-pubs {
