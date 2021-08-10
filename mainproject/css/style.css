@@ -1501,10 +1501,6 @@ h3.caps a::after {
   }
 }
 
-.pub-column {
-  max-height: 800px;
-}
-
 @media (min-width: 1024px) {
   .pub-column {
     columns: 3;
@@ -1519,6 +1515,17 @@ h3.caps a::after {
   margin: 0 0 40px 0;
   break-inside: avoid-column;
   overflow: hidden;
+  display: none;
+}
+
+.pub-column .article:nth-child(-n+3) {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .pub-column .article:nth-child(-n+6) {
+    display: block;
+  }
 }
 
 .pub-column .article img {
