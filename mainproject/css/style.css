@@ -1254,7 +1254,7 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .services > h3 {
-    margin: 14px 0;
+    margin: 5px 0;
   }
 }
 
@@ -1301,6 +1301,7 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .serv-menu h3 {
     padding: 0;
+    margin: 12px 0;
   }
 }
 
