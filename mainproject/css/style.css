@@ -559,6 +559,123 @@ h3.caps a::after {
   right: -5px;
 }
 
+.main {
+  flex-grow: 1;
+}
+
+.mainpage .logo img:nth-child(2) {
+  display: none;
+}
+
+.mainpage .breadcrumb {
+  display: none;
+}
+
+body:not(.mainpage) .logo img:nth-child(1) {
+  display: none;
+}
+
+body:not(.mainpage) .head-contact a, body:not(.mainpage) .head-addr, body:not(.mainpage) .lang a {
+  color: #b3b3ba;
+}
+
+body:not(.mainpage) .lang li.active a, body:not(.mainpage) .lang li a:hover {
+  color: #fff;
+}
+
+body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::after, body:not(.mainpage) .menu-btn > span::before {
+  background-color: #323264;
+}
+
+@media (min-width: 1024px) {
+  body:not(.mainpage) .nav-list a {
+    color: #24a3ff;
+  }
+}
+
+@media (min-width: 1024px) {
+  body:not(.mainpage) .nav-list li.active a {
+    color: #f0145a;
+    border-bottom: 2px solid #f0145a;
+  }
+}
+
+@media (min-width: 1024px) {
+  body:not(.mainpage) .nav-list a:hover {
+    color: #f0145a;
+    border-bottom: 2px solid #f0145a;
+    transition: all 0.3s;
+  }
+}
+
+.breadcrumb {
+  color: #323264;
+  font-size: 19px;
+  padding: 0 0 5px 14px;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .breadcrumb {
+    font-size: 38px;
+    padding: 0 0 20px 27px;
+  }
+}
+
+.breadcrumb:before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 24px;
+  background-image: url(../images/slash.svg);
+  background-size: cover;
+  position: absolute;
+  top: 5px;
+  left: 2px;
+}
+
+@media (min-width: 1024px) {
+  .breadcrumb:before {
+    width: 21px;
+    height: 47px;
+    top: 7px;
+    left: 4px;
+  }
+}
+
+.breadcrumb:after {
+  content: "";
+  display: block;
+  width: 22px;
+  height: 24px;
+  background-image: url(../images/smbl-slash.svg);
+  background-size: cover;
+  position: absolute;
+  top: 5px;
+  right: -23px;
+}
+
+@media (min-width: 1024px) {
+  .breadcrumb:after {
+    width: 43px;
+    height: 47px;
+    top: 7px;
+    right: -45px;
+  }
+}
+
+.logo {
+  margin-top: 5px;
+  width: 78px;
+}
+
+@media (min-width: 1024px) {
+  .logo {
+    margin-top: -5px;
+    width: 155px;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column-reverse;
@@ -578,21 +695,14 @@ h3.caps a::after {
   }
 }
 
-.header .logo {
-  margin-top: 5px;
-  width: 78px;
-}
-
-@media (min-width: 1024px) {
-  .header .logo {
-    margin-top: -5px;
-    width: 155px;
-  }
-}
-
 .header a, .header address {
   color: #fff;
   line-height: 0;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
 }
 
 .head-inf {
@@ -694,13 +804,16 @@ h3.caps a::after {
   border-radius: 8px;
 }
 
+.lang li a:hover {
+  background: #f0145a;
+  border-radius: 8px;
+  margin: -5px -6px;
+  padding: 5px 6px;
+}
+
 .lang {
   margin: 0;
   padding: 0 0px 5px 0;
-}
-
-.main {
-  flex-grow: 1;
 }
 
 .main-nav {
@@ -797,12 +910,14 @@ h3.caps a::after {
 .nav-list li a {
   color: #24a3ff;
   font-size: 24px;
+  font-weight: 700;
 }
 
 @media (min-width: 1024px) {
   .nav-list li a {
     color: #fff;
     font-size: 18px;
+    font-weight: 400;
   }
 }
 
@@ -877,15 +992,15 @@ h3.caps a::after {
 }
 
 #menu-toggle:checked ~ .menu-btn > span {
-  background: #848383;
+  opacity: 0.7;
 }
 
 #menu-toggle:checked ~ .menu-btn > span::before {
-  background: #848383;
+  opacity: 0.7;
 }
 
 #menu-toggle:checked ~ .menu-btn > span::after {
-  background: #848383;
+  opacity: 0.7;
 }
 
 #menu-toggle:checked ~ .nav-list {
@@ -1741,13 +1856,19 @@ h3.caps a::after {
   }
 }
 
-.more-pubs::after {
+.separator {
+  position: relative;
+}
+
+.separator::after {
   content: '';
   display: block;
-  width: 100%;
   height: 4px;
   background: #E6E6F0;
-  margin-top: 36px;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
 }
 
 .btn {
@@ -1768,4 +1889,87 @@ h3.caps a::after {
 .btn:active {
   background: #006ccf;
   box-shadow: none;
+}
+
+.achievements {
+  padding: 200px 15px 100px;
+  display: flex;
+}
+
+.achiev-text {
+  width: 59%;
+  font-size: 21px;
+  padding-right: 40px;
+}
+
+.medals {
+  width: 31%;
+  color: #323264;
+  padding-left: 20px;
+  border-left: 4px solid #e6e6f0;
+}
+
+.medals img {
+  height: 42px;
+  width: auto;
+}
+
+.medals:nth-child(2) {
+  padding: 15px 0 0 20px;
+  border: none;
+}
+
+.team-photo {
+  background: linear-gradient(264.71deg, #f01432 0%, #323264 29.69%), url(../images/team-photo.jpg);
+  background-blend-mode: screen, normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 438px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-photo h1 {
+  font-size: 96px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 63px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.achievements:nth-child(3) {
+  padding: 80px 15px 90px;
+}
+
+.ach-banners {
+  background: #f5f5fa;
+  text-align: center;
+}
+
+.ach-banners .caps {
+  padding: 28px 0;
+  margin: 0;
+}
+
+.ach-banners .bullet-flex {
+  margin: 0;
+  padding: 30px 0;
+}
+
+.banner-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner-ach {
+  width: 300px;
+  height: 109px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
 }
