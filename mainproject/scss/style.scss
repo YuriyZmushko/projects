@@ -588,7 +588,7 @@
         overflow: hidden;
         display: none;
         font-size: 16px;
-        padding: 8px 0;
+        // padding: 8px 0;
         @media (min-width: 1024px) {
             margin: 0 0 40px 0;
             padding: 0 0 45px;
@@ -614,6 +614,10 @@
 
         img {
             width: 100%;
+            margin-bottom: -7px;
+            @media (min-width: 1024px) {
+                margin-bottom: 0;
+            }
         }
     }
 
@@ -623,6 +627,8 @@
         font-size: 12px;
         font-weight: 700;
         color: #b3b3ba;
+        margin: 0 20px;
+        padding: 5px 0 18px;
         
         @media (min-width: 1024px) {
             border-bottom: 4px solid #e6e6f0;
@@ -630,20 +636,17 @@
     }
 
    
-    p, h4 {
-        padding: 8px 0 0;
+    h4 {
+        padding-top: 20px;
         margin: 0 20px;
-    }
-
-    .date {
-        margin: 0 20px;
-        padding: 5px 0 15px;
     }
 
     p {
         display: none;
         @media (min-width: 1024px) {
             display: block;
+            padding: 8px 0 0;
+            margin: 0 20px;
         }
     }
 

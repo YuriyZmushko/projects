@@ -1655,7 +1655,6 @@ h3.caps a::after {
   overflow: hidden;
   display: none;
   font-size: 16px;
-  padding: 8px 0;
 }
 
 @media (min-width: 1024px) {
@@ -1681,6 +1680,13 @@ h3.caps a::after {
 
 .pub-column .article img {
   width: 100%;
+  margin-bottom: -7px;
+}
+
+@media (min-width: 1024px) {
+  .pub-column .article img {
+    margin-bottom: 0;
+  }
 }
 
 .pub-column .date {
@@ -1689,6 +1695,8 @@ h3.caps a::after {
   font-size: 12px;
   font-weight: 700;
   color: #b3b3ba;
+  margin: 0 20px;
+  padding: 5px 0 18px;
 }
 
 @media (min-width: 1024px) {
@@ -1697,14 +1705,9 @@ h3.caps a::after {
   }
 }
 
-.pub-column p, .pub-column h4 {
-  padding: 8px 0 0;
+.pub-column h4 {
+  padding-top: 20px;
   margin: 0 20px;
-}
-
-.pub-column .date {
-  margin: 0 20px;
-  padding: 5px 0 15px;
 }
 
 .pub-column p {
@@ -1714,6 +1717,8 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .pub-column p {
     display: block;
+    padding: 8px 0 0;
+    margin: 0 20px;
   }
 }
 
