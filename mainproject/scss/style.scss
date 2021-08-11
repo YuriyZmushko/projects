@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 
     @media (min-width: 1024px) {
     background: url("../images/long-leg.svg"), url("../images/firstscr-pattern.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
@@ -19,6 +20,11 @@
     background-position: bottom, center, center;
     background-repeat: no-repeat;
     }
+
+    h1 {
+        max-width: 600px;
+    }
+
 }
 
 .scroll {
@@ -37,7 +43,10 @@
     }
 
     a {
-        margin-bottom: 20px;
+        margin-bottom: 45px;
+        @media (min-width: 1024px) {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -52,7 +61,7 @@
         font-size: 18px;
         @media (min-width: 1024px) {
             width: 55%;
-            padding: 0 200px 0 40px;
+            padding-left:40px;
             font-size: 21px;
         }
     }
@@ -70,12 +79,17 @@
     flex-direction: column-reverse;
     align-items: center;
     @media (min-width: 1024px) {
-    padding-top: 80px;
+    padding: 50px;
     flex-direction: row;
     }
 
     h2 {
         color: #fff;
+        font-weight: 500;
+        margin: 5px 0 17px;
+        @media (min-width: 1024px) {
+            margin: 25px 0;
+            }
     }
 
     li.active::after {
@@ -108,11 +122,13 @@
 .utp {
     display: flex;
     padding: 0;
+    margin: 0 0 25px;
     @media (min-width: 1024px) {
-        width: 45%;
+        width: 43%;
         text-align: right;
         border-right: 4px solid #e6e6f0;
         display: block;
+        margin: 20px 0;
     }
 
     a {
@@ -156,13 +172,14 @@
 
 .utp li, .utp li.active {
     @media (min-width: 1024px) {
-        padding-right: 40px;
+        padding: 3px 40px;
         position: relative;
         display: block;
         width: auto;
         height: auto;
         background: none;
         margin: 0;
+    
     }
 }
 
@@ -195,22 +212,75 @@
         opacity: 1;
     }
 
-    h3 {
-        color: #24a3ff;
+    >h3 {
+        margin: 14px 0 0;
+        @media (min-width: 1024px) {
+            margin: 14px 0;
+        }
+    }
+
+    p {
+        margin: 10px 0;
+        @media (min-width: 1024px) {
+            margin: 0;
+        }
     }
 }
+
+
 
 .serv-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 10px;
+    
+    @media (min-width: 1024px) {
+        padding-bottom: 80px;
+    }
+
+
 
     .item {
         width: 100%;
+        padding-top: 18px;
         @media (min-width: 1024px) {
             width: 32%;
+            padding: 70px 0 0;
         }
     }
+
+    h3 {
+        color: #24a3ff;
+        padding-left: 15px;
+        @media (min-width: 1024px) {
+            padding: 0;
+        }
+    }
+
+
+
+}
+
+.item-mob {
+    display: flex;
+    align-items: center;
+    @media (min-width: 1024px) {
+        display: block;
+    }
+
+    img {
+        width: 64px;
+        @media (min-width: 1024px) {
+            width: 92px;
+        }
+    }
+
+
+
+
+
+
 }
 
 .shadow {
@@ -236,9 +306,11 @@
 
 .team-banner {
     display: flex;
-    margin-top: 50px;
-    
+    margin-top: 15px;
     flex-wrap: wrap;
+    @media (min-width: 1024px) {
+        margin-top: 42px;
+    }
 }
 
 .bg-rounded {
@@ -286,7 +358,7 @@
         margin: 3px 0 10px;
         display: block;
         @media (min-width: 1024px) {
-            margin: 3px 0 30px;
+            margin: 3px 0 20px;
         }
 
     }
@@ -310,7 +382,11 @@
 
 .cases {
     display: flex;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;   
+    margin-top: 25px; 
+    @media (min-width: 1024px) {
+        margin-top: 35px;
+    }
 
     h3, p {
         width: 100%;
@@ -326,9 +402,15 @@
     // padding: 20px;
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
+    padding-bottom: 15px;
+    @media (min-width: 1024px) {
+        padding-bottom: 0;
+    }
+
 
     h3 {
         color: #686887;
+        
     }
 
     p {
@@ -340,12 +422,20 @@
         border-bottom: 2px solid #fff;
         margin: 0;
         padding: 20px;
-        margin-bottom: 30px;
+        
+        @media (min-width: 1024px) {
+            margin-bottom: 30px;
+        }
+
     }
 
     h3, p {
         margin: 0;
-        padding: 10px 20px;
+        padding: 16px 20px 0;
+
+        @media (min-width: 1024px) {
+            padding: 15px 20px;
+        }
     }
 
     
@@ -357,21 +447,21 @@
     width: 100%;
 
     @media (min-width: 1024px) {
-        width: 32%;
+        width: 32.5%;
     }
 }
 
 .case-holder:nth-child(2) {
     width: 100%;
     @media (min-width: 1024px) {
-        width: 34%;
+        width: 34.5%;
     }
 }
 
 .case-holder:nth-child(3) {
     width: 100%;
     @media (min-width: 1024px) {
-        width: 34%;
+        width: 33%;
     }
 }
 
@@ -442,16 +532,16 @@
 
     }
 
-
     a {
         color: #24a3ff;
     }
 
-
-
     .caps {
-        padding: 40px 0 20px;
+        padding: 20px 0 5px;
         margin: 0;
+        @media (min-width: 1024px) {
+            padding: 40px 0 5px;
+        }
     }
 }
 
@@ -465,7 +555,8 @@
 .pub-board {
     @media (min-width: 1024px) {
         overflow: hidden;
-        max-height: 900px;
+        max-height: 710px;
+        margin-top: 40px;
     }
 }
 
@@ -492,10 +583,18 @@
     .article {
         background: #fff;
         border-radius: 8px;
-        margin: 0 0 40px 0;
+        margin: 20px 0;
         break-inside: avoid-column;
         overflow: hidden;
         display: none;
+        font-size: 16px;
+        padding: 8px 0;
+        @media (min-width: 1024px) {
+            margin: 0 0 40px 0;
+            padding: 0 0 45px;
+        }
+
+
 
         &:nth-child(-n+3) {
             display: block;
@@ -507,7 +606,9 @@
             }
         }
 
-        
+        >a {
+            font-size: 0;
+        }
 
 
 
@@ -519,7 +620,7 @@
     .date {
         text-transform: uppercase;
         display: block;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 700;
         color: #b3b3ba;
         
@@ -529,25 +630,41 @@
     }
 
    
-    p, h4, .date {
-        padding: 10px 0 20px;
+    p, h4 {
+        padding: 8px 0 0;
         margin: 0 20px;
     }
+
+    .date {
+        margin: 0 20px;
+        padding: 5px 0 15px;
+    }
+
+    p {
+        display: none;
+        @media (min-width: 1024px) {
+            display: block;
+        }
+    }
+
+
+
 }
 
 
 .more-pubs {
     
     position: static;
-    height: 200px;
     text-align: center;
-    padding-top: 110px;
+    padding-top: 20px;
     @media (min-width: 1024px) {
         background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
+        height: 200px;
+        padding-top: 110px;
     }
 
 

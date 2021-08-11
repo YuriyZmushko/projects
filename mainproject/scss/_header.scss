@@ -11,14 +11,14 @@
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
-        top: 54px;
+        top: 50px;
     }
     
     .logo {
-        margin-top: 33px;
+        margin-top: 5px;
         width: 78px;
         @media (min-width: 1024px) {
-            margin-top: -20px;
+            margin-top: -5px;
             width: 155px;
         }
     }
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    font-weight: bold;
+    // font-weight: bold;
     @media (min-width: 1024px) {
         width: auto;
         
@@ -52,7 +52,7 @@
         font-size: 16px;
         @media (min-width: 1024px) {
             color: #fff;
-            margin-left: 30px;
+            margin-left: 25px;
         }
     }
 
@@ -68,7 +68,7 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            left: -15px;
+            left: -12px;
             cursor: initial;
         }
     }
@@ -78,12 +78,13 @@
         font-weight: normal;
         @media (min-width: 1024px) {
             display: block;
+            margin-left: 15px;
         }
     }
 
     .fb {
         display: none;
-        font-size: 24px;
+        font-size: 28px;
         @media (min-width: 1024px) {
             display: inline;
         }
@@ -94,14 +95,21 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
+}
+
+.tel {
+    font-weight: 700;
+    letter-spacing: 0.03em;
 }
 
 .lang li {
     list-style: none;
     display: inline;
-    padding: 4px 7px;
+    padding: 5px 6px;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 700;
 }
 
 .lang li.active {
@@ -111,7 +119,7 @@
 
 .lang {
     margin: 0;
-    padding: 0 0 5px;
+    padding: 0 0px 5px 0;
 }
 
 .main {
@@ -175,7 +183,7 @@
     border-radius: 12px;
     @media (min-width: 1024px) {
         display: inline;
-        padding: 0 0 0 20px;
+        padding: 0 0 0 14px;
         text-align: left;
         background: transparent;
         margin: 0;
@@ -215,7 +223,7 @@
     display: flex;
     align-items: center;
     position: absolute;
-    top: 63px;
+    top: 50px;
     right: 20px;
     width: 18px;
     height: 18px;

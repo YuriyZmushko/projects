@@ -384,12 +384,11 @@ img {
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
+  speak-as: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -420,6 +419,14 @@ h1, h2, h3, h4 {
 h1 {
   color: #fff;
   font-size: 38px;
+  line-height: 1.22;
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    line-height: 1.2;
+  }
 }
 
 h2 {
@@ -429,6 +436,17 @@ h2 {
 @media (min-width: 1024px) {
   h2 {
     font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 24px;
   }
 }
 
@@ -493,6 +511,7 @@ address {
   display: flex;
   justify-content: center;
   padding: 0;
+  margin: 12px 0;
 }
 
 .bullet li, .bullet li.active {
@@ -517,6 +536,7 @@ address {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -554,18 +574,18 @@ h3.caps a::after {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    top: 54px;
+    top: 50px;
   }
 }
 
 .header .logo {
-  margin-top: 33px;
+  margin-top: 5px;
   width: 78px;
 }
 
 @media (min-width: 1024px) {
   .header .logo {
-    margin-top: -20px;
+    margin-top: -5px;
     width: 155px;
   }
 }
@@ -579,7 +599,6 @@ h3.caps a::after {
   display: flex;
   flex-direction: column;
   width: 100%;
-  font-weight: bold;
 }
 
 @media (min-width: 1024px) {
@@ -602,7 +621,7 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .head-contact > a, .head-contact address {
     color: #fff;
-    margin-left: 30px;
+    margin-left: 25px;
   }
 }
 
@@ -621,7 +640,7 @@ h3.caps a::after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: -15px;
+    left: -12px;
     cursor: initial;
   }
 }
@@ -634,12 +653,13 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .head-contact .head-addr {
     display: block;
+    margin-left: 15px;
   }
 }
 
 .head-contact .fb {
   display: none;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 @media (min-width: 1024px) {
@@ -652,14 +672,21 @@ h3.caps a::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 10px;
+}
+
+.tel {
+  font-weight: 700;
+  letter-spacing: 0.03em;
 }
 
 .lang li {
   list-style: none;
   display: inline;
-  padding: 4px 7px;
+  padding: 5px 6px;
   text-transform: uppercase;
   font-size: 12px;
+  font-weight: 700;
 }
 
 .lang li.active {
@@ -669,7 +696,7 @@ h3.caps a::after {
 
 .lang {
   margin: 0;
-  padding: 0 0 5px;
+  padding: 0 0px 5px 0;
 }
 
 .main {
@@ -740,7 +767,7 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .nav-list li {
     display: inline;
-    padding: 0 0 0 20px;
+    padding: 0 0 0 14px;
     text-align: left;
     background: transparent;
     margin: 0;
@@ -787,7 +814,7 @@ h3.caps a::after {
   display: flex;
   align-items: center;
   position: absolute;
-  top: 63px;
+  top: 50px;
   right: 20px;
   width: 18px;
   height: 18px;
@@ -916,7 +943,7 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .contacts a:not(.fb) {
-    padding-left: 30px;
+    padding-left: 20px;
   }
 }
 
@@ -935,7 +962,7 @@ h3.caps a::after {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 15px;
+    left: 7px;
     cursor: initial;
   }
 }
@@ -955,19 +982,13 @@ h3.caps a::after {
 }
 
 .contacts .fb {
-  font-size: 38px;
+  font-size: 45px;
   padding: 5px 0;
-}
-
-@media (min-width: 1024px) {
-  .contacts .fb {
-    padding: 15px 0;
-  }
 }
 
 .foot-addr {
   color: #323264;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 @media (min-width: 1024px) {
@@ -1000,6 +1021,7 @@ h3.caps a::after {
   color: #b3b3ba;
   font-weight: 400;
   padding: 0 30px;
+  font-size: 16px;
 }
 
 @media (min-width: 1024px) {
@@ -1022,6 +1044,7 @@ h3.caps a::after {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
@@ -1031,6 +1054,10 @@ h3.caps a::after {
     background-position: bottom, center, center;
     background-repeat: no-repeat;
   }
+}
+
+.firstscreen h1 {
+  max-width: 600px;
 }
 
 .scroll {
@@ -1050,7 +1077,13 @@ h3.caps a::after {
 }
 
 .scroll a {
-  margin-bottom: 20px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: 1024px) {
+  .scroll a {
+    margin-bottom: 20px;
+  }
 }
 
 .secondscreen {
@@ -1068,7 +1101,7 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .secondscreen .utp-detail {
     width: 55%;
-    padding: 0 200px 0 40px;
+    padding-left: 40px;
     font-size: 21px;
   }
 }
@@ -1087,13 +1120,21 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .txt-slider {
-    padding-top: 80px;
+    padding: 50px;
     flex-direction: row;
   }
 }
 
 .txt-slider h2 {
   color: #fff;
+  font-weight: 500;
+  margin: 5px 0 17px;
+}
+
+@media (min-width: 1024px) {
+  .txt-slider h2 {
+    margin: 25px 0;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1124,14 +1165,16 @@ h3.caps a::after {
 .utp {
   display: flex;
   padding: 0;
+  margin: 0 0 25px;
 }
 
 @media (min-width: 1024px) {
   .utp {
-    width: 45%;
+    width: 43%;
     text-align: right;
     border-right: 4px solid #e6e6f0;
     display: block;
+    margin: 20px 0;
   }
 }
 
@@ -1173,7 +1216,7 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .utp li, .utp li.active {
-    padding-right: 40px;
+    padding: 3px 40px;
     position: relative;
     display: block;
     width: auto;
@@ -1205,23 +1248,80 @@ h3.caps a::after {
   opacity: 1;
 }
 
-.services h3 {
-  color: #24a3ff;
+.services > h3 {
+  margin: 14px 0 0;
+}
+
+@media (min-width: 1024px) {
+  .services > h3 {
+    margin: 14px 0;
+  }
+}
+
+.services p {
+  margin: 10px 0;
+}
+
+@media (min-width: 1024px) {
+  .services p {
+    margin: 0;
+  }
 }
 
 .serv-menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 1024px) {
+  .serv-menu {
+    padding-bottom: 80px;
+  }
 }
 
 .serv-menu .item {
   width: 100%;
+  padding-top: 18px;
 }
 
 @media (min-width: 1024px) {
   .serv-menu .item {
     width: 32%;
+    padding: 70px 0 0;
+  }
+}
+
+.serv-menu h3 {
+  color: #24a3ff;
+  padding-left: 15px;
+}
+
+@media (min-width: 1024px) {
+  .serv-menu h3 {
+    padding: 0;
+  }
+}
+
+.item-mob {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .item-mob {
+    display: block;
+  }
+}
+
+.item-mob img {
+  width: 64px;
+}
+
+@media (min-width: 1024px) {
+  .item-mob img {
+    width: 92px;
   }
 }
 
@@ -1249,8 +1349,14 @@ h3.caps a::after {
 
 .team-banner {
   display: flex;
-  margin-top: 50px;
+  margin-top: 15px;
   flex-wrap: wrap;
+}
+
+@media (min-width: 1024px) {
+  .team-banner {
+    margin-top: 42px;
+  }
 }
 
 .bg-rounded {
@@ -1309,7 +1415,7 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .member-text .hero {
-    margin: 3px 0 30px;
+    margin: 3px 0 20px;
   }
 }
 
@@ -1332,6 +1438,13 @@ h3.caps a::after {
 .cases {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+@media (min-width: 1024px) {
+  .cases {
+    margin-top: 35px;
+  }
 }
 
 .cases h3, .cases p {
@@ -1344,6 +1457,13 @@ h3.caps a::after {
   justify-content: flex-end;
   border-bottom: 2px solid #fff;
   border-left: 2px solid #fff;
+  padding-bottom: 15px;
+}
+
+@media (min-width: 1024px) {
+  .case-holder {
+    padding-bottom: 0;
+  }
 }
 
 .case-holder h3 {
@@ -1359,12 +1479,23 @@ h3.caps a::after {
   border-bottom: 2px solid #fff;
   margin: 0;
   padding: 20px;
-  margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .case-holder .caps {
+    margin-bottom: 30px;
+  }
 }
 
 .case-holder h3, .case-holder p {
   margin: 0;
-  padding: 10px 20px;
+  padding: 16px 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .case-holder h3, .case-holder p {
+    padding: 15px 20px;
+  }
 }
 
 .case-holder:nth-child(1) {
@@ -1373,7 +1504,7 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .case-holder:nth-child(1) {
-    width: 32%;
+    width: 32.5%;
   }
 }
 
@@ -1383,7 +1514,7 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .case-holder:nth-child(2) {
-    width: 34%;
+    width: 34.5%;
   }
 }
 
@@ -1393,7 +1524,7 @@ h3.caps a::after {
 
 @media (min-width: 1024px) {
   .case-holder:nth-child(3) {
-    width: 34%;
+    width: 33%;
   }
 }
 
@@ -1475,8 +1606,14 @@ h3.caps a::after {
 }
 
 .publications .caps {
-  padding: 40px 0 20px;
+  padding: 20px 0 5px;
   margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .publications .caps {
+    padding: 40px 0 5px;
+  }
 }
 
 .pub-intro h3.caps a::after, .member-text h3.caps a::after {
@@ -1487,7 +1624,8 @@ h3.caps a::after {
 @media (min-width: 1024px) {
   .pub-board {
     overflow: hidden;
-    max-height: 900px;
+    max-height: 710px;
+    margin-top: 40px;
   }
 }
 
@@ -1512,10 +1650,19 @@ h3.caps a::after {
 .pub-column .article {
   background: #fff;
   border-radius: 8px;
-  margin: 0 0 40px 0;
+  margin: 20px 0;
   break-inside: avoid-column;
   overflow: hidden;
   display: none;
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+@media (min-width: 1024px) {
+  .pub-column .article {
+    margin: 0 0 40px 0;
+    padding: 0 0 45px;
+  }
 }
 
 .pub-column .article:nth-child(-n+3) {
@@ -1528,6 +1675,10 @@ h3.caps a::after {
   }
 }
 
+.pub-column .article > a {
+  font-size: 0;
+}
+
 .pub-column .article img {
   width: 100%;
 }
@@ -1535,7 +1686,7 @@ h3.caps a::after {
 .pub-column .date {
   text-transform: uppercase;
   display: block;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   color: #b3b3ba;
 }
@@ -1546,16 +1697,30 @@ h3.caps a::after {
   }
 }
 
-.pub-column p, .pub-column h4, .pub-column .date {
-  padding: 10px 0 20px;
+.pub-column p, .pub-column h4 {
+  padding: 8px 0 0;
   margin: 0 20px;
+}
+
+.pub-column .date {
+  margin: 0 20px;
+  padding: 5px 0 15px;
+}
+
+.pub-column p {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .pub-column p {
+    display: block;
+  }
 }
 
 .more-pubs {
   position: static;
-  height: 200px;
   text-align: center;
-  padding-top: 110px;
+  padding-top: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -1565,6 +1730,8 @@ h3.caps a::after {
     bottom: 0;
     left: 0;
     right: 0;
+    height: 200px;
+    padding-top: 110px;
   }
 }
 
