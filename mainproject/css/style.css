@@ -559,8 +559,9 @@ h3.caps a::after {
   right: -5px;
 }
 
-.main {
+body:not(.mainpage) .main {
   flex-grow: 1;
+  padding: 200px 0 100px;
 }
 
 .mainpage .logo img:nth-child(2) {
@@ -1887,7 +1888,6 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 }
 
 .achievements {
-  padding: 200px 15px 100px;
   display: flex;
   flex-direction: column;
 }
@@ -2042,4 +2042,39 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   .separator .bullet-flex li:nth-last-child(-n+2) {
     display: none;
   }
+}
+
+@media (min-width: 1024px) {
+  .teampage .hero {
+    padding: 0 200px;
+    display: block;
+  }
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.member-card {
+  width: 30%;
+  color: #b3b3ba;
+  position: relative;
+}
+
+.member-card img {
+  border-radius: 12px;
+}
+
+.member-card p:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  display: block;
+  border-top: 2px solid #24a3ff;
+  border-right: 2px solid #24a3ff;
+  transform: rotate(45deg);
+  background-size: 32px 32px;
+  background-color: #F5F5FA;
 }

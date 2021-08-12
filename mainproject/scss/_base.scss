@@ -209,6 +209,7 @@ h3.caps a::after {
     right: -5px;
 }
 
-.main {
+body:not(.mainpage) .main {
     flex-grow: 1;
+    padding: 200px 0 100px;
 }
