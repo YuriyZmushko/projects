@@ -561,7 +561,7 @@ h3.caps a::after {
 
 body:not(.mainpage) .main {
   flex-grow: 1;
-  padding: 200px 0 100px;
+  padding-top: 200px;
 }
 
 .mainpage .logo img:nth-child(2) {
@@ -2046,7 +2046,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 
 @media (min-width: 1024px) {
   .teampage .hero {
-    padding: 0 200px;
+    padding: 0 200px 60px;
     display: block;
   }
 }
@@ -2055,26 +2055,120 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 90px;
 }
 
 .member-card {
-  width: 30%;
   color: #b3b3ba;
-  position: relative;
+  padding: 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .member-card {
+    width: 30%;
+  }
 }
 
 .member-card img {
+  width: 47%;
   border-radius: 12px;
 }
 
-.member-card p:after {
-  content: '';
-  width: 12px;
-  height: 12px;
+@media (min-width: 1024px) {
+  .member-card img {
+    width: 100%;
+  }
+}
+
+.member-card h4 {
+  margin: 0;
+  padding: 20px 0 5px;
+}
+
+.member-card .position:after {
+  content: url(../images/arrow.svg);
+  padding: 7px 0 0 13px;
+  width: 32px;
+  height: 32px;
   display: block;
-  border-top: 2px solid #24a3ff;
-  border-right: 2px solid #24a3ff;
-  transform: rotate(45deg);
   background-size: 32px 32px;
-  background-color: #F5F5FA;
+  background-color: #f5f5fa;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+@media (min-width: 1024px) {
+  .member-card .position:after {
+    top: -20px;
+    right: 0;
+    left: auto;
+  }
+}
+
+.member-card a:hover .position:after {
+  background-color: #ededf7;
+}
+
+.member-card a:hover h4 {
+  color: #f0145a;
+}
+
+@media (min-width: 1024px) {
+  .member-card br {
+    display: none;
+  }
+}
+
+.position {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  color: #b3b3ba;
+}
+
+.card-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+  .card-flex {
+    display: block;
+  }
+}
+
+.card-flex .mob-right {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+
+@media (min-width: 1024px) {
+  .card-flex .mob-right {
+    display: block;
+    margin-right: 0;
+  }
+}
+
+.team-member {
+  display: flex;
+  padding: 0 150px;
+}
+
+.team-member .position {
+  display: inline;
+}
+
+.team-member .member-photo {
+  width: 50%;
+}
+
+.team-member .member-photo img {
+  height: auto;
+}
+
+.team-member .member-text {
+  padding: 0 0 0 20px;
 }

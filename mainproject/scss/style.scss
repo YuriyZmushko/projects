@@ -845,7 +845,7 @@
     .hero {
         
         @media (min-width: 1024px) {
-            padding: 0 200px;
+            padding: 0 200px 60px;
             display: block;
         }
     }
@@ -855,28 +855,112 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 90px;
 }
 
 .member-card {
-    width: 30%;
+    
     color: #b3b3ba;
-    position: relative;
+    padding: 20px 0;
+    @media (min-width: 1024px) {
+        width: 30%;
+    }
 
     img {
+        width: 47%;
         border-radius: 12px;
+        @media (min-width: 1024px) {
+            width: 100%;
+        }
     }
 
-    p:after {
-        content: '';
-        width: 12px;
-        height: 12px;
+    h4 {
+        margin: 0;
+        padding: 20px 0 5px;
+    }
+
+    
+
+    .position:after {
+        content: url(../images/arrow.svg);
+        padding: 7px 0 0 13px;;
+        width: 32px;
+        height: 32px;
         display: block;
-        border-top: 2px solid #24a3ff;
-        border-right: 2px solid #24a3ff;
-        transform: rotate(45deg);
         background-size: 32px 32px;
-        background-color: #F5F5FA;
+        background-color: #f5f5fa;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        
+        @media (min-width: 1024px) {
+            top: -20px;
+            right: 0;
+            left: auto;
+        }
+    }
+
+    a:hover .position:after  {
+        background-color: #ededf7;
+    }
+
+    a:hover h4 {
+        color: #f0145a;
+    }
+
+    br {
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+
+}
+
+.position {
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: #b3b3ba;
+}
+
+.card-flex {
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 1024px) {
+        display: block;
+    }
+
+    .mob-right {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 20px;
+            @media (min-width: 1024px) {
+            display: block;
+            margin-right: 0;
+        }
+    }
+}
+
+.team-member {
+    display: flex;
+    padding: 0 150px;
+
+    .position {
+        display: inline;
 
     }
 
+    .member-photo {
+        width: 50%;
+        
+
+        img {
+            height: auto;
+        }
+    }
+
+    .member-text {
+        padding: 0 0 0 20px;
+    }
 }
