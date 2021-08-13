@@ -40,23 +40,15 @@
 }
   
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak-as: never;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    // line-height: 1;
-  
-    /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-  
-// .icon-facebook:before {
-//     content: "\e900";
-// }
 
 body {
     font: 16px/1.44 'TT Norms', sans-serif;
@@ -81,7 +73,6 @@ h1 {
     color: #fff;
     font-size: 38px;
     line-height: 1.22;
-    margin-top: 0;
     @media (min-width: 1024px) {
         line-height: 1.2;
     }
@@ -176,8 +167,8 @@ address {
     cursor: pointer;
 }
 
-.bullet li:hover {
-    opacity: 1;
+.bullet li:not(.active):hover {
+    opacity: 0.6;
 }
 
 .caps {
@@ -211,5 +202,33 @@ h3.caps a::after {
 
 body:not(.mainpage) .main {
     flex-grow: 1;
-    padding-top: 200px;
+    padding-top: 124px;
+    @media (min-width: 1024px) {
+        padding-top: 200px;
+    }
+}
+
+li.active a {
+    cursor: default;
+}
+
+.head-contact>a::before, .head-contact address::before, .footer a:not(.fb)::before, .resume a::before {
+    display: none;
+    @media (min-width: 1024px) {
+        content: "";
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: #e6e6f0;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -12px;
+        cursor: initial;
+    }
+}
+
+.footer a:not(.fb)::before {
+    left: 7px;
 }

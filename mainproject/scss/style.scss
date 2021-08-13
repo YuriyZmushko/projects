@@ -24,7 +24,6 @@
     h1 {
         max-width: 600px;
     }
-
 }
 
 .scroll {
@@ -70,7 +69,6 @@
         @media (min-width: 1024px) {
             opacity: 1;
         }
-        
     }
 }
 
@@ -111,8 +109,8 @@
         }
     }
 
-    li.active a, .subtitle {
-        cursor: default;
+    li.active a, .subtitle, a:hover {
+
         background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -138,37 +136,20 @@
             font-weight: 700;   
             font-size: 42px;
         }
-
     }
 
-    a:hover {
-        background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    a::after, li.active::after {
+    li.active::after {
         @media (min-width: 1024px) {
             content: '';
             position: absolute;
             width: 4px;
-            height: 0;
+            height: 100%;
             background: #f0145a;
             top: 0;
             right: -4px;
         }
     }
-
-    li.active::after {
-        @media (min-width: 1024px) {
-            height: 100%;
-        }
-    }
-
 }
-
-
-
 
 .utp li, .utp li.active {
     @media (min-width: 1024px) {
@@ -182,13 +163,6 @@
     
     }
 }
-
-
-
-
-
-
-
 
 .subtitle {
     text-transform: uppercase;
@@ -237,8 +211,6 @@
         padding-bottom: 80px;
     }
 
-
-
     .item {
         width: 100%;
         padding-top: 18px;
@@ -256,9 +228,6 @@
             margin: 12px 0;
         }
     }
-
-
-
 }
 
 .item-mob {
@@ -274,12 +243,6 @@
             width: 92px;
         }
     }
-
-
-
-
-
-
 }
 
 .shadow {
@@ -347,8 +310,6 @@
         padding: 40px;
     }
 
-    
-
     .caps, h4 {
         margin: 0;
     }
@@ -359,7 +320,6 @@
         @media (min-width: 1024px) {
             margin: 3px 0 20px;
         }
-
     }
 }
 
@@ -391,21 +351,20 @@
         width: 100%;
     }
 
-    
+    a:hover {
+        background: #ededf7;
+    }
 }
 
 .case-holder {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    // padding: 20px;
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
-    padding-bottom: 15px;
     @media (min-width: 1024px) {
         padding-bottom: 0;
     }
-
 
     h3 {
         color: #686887;
@@ -421,32 +380,22 @@
         border-bottom: 2px solid #fff;
         margin: 0;
         padding: 20px;
-        
-        @media (min-width: 1024px) {
-            margin-bottom: 30px;
-        }
-
     }
 
     h3, p {
         margin: 0;
-        padding: 16px 20px 0;
-
-        @media (min-width: 1024px) {
-            padding: 15px 20px;
-        }
+        padding: 15px 20px;
     }
-
-    
-
-
 }
 
 .case-holder:nth-child(1) {
     width: 100%;
-
     @media (min-width: 1024px) {
         width: 32.5%;
+    }
+
+    h3:not(.caps) {
+        padding: 48px 20px 15px;
     }
 }
 
@@ -500,7 +449,6 @@
     
     .logo-holder {
         width: 50%;
-        // padding: 13px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -514,7 +462,6 @@
             line-height: 0;
         }
 
-
         img {
             max-width: 90%;
             max-height: 90%;
@@ -524,12 +471,7 @@
 
 .publications {
     background: #f5f5fa;
-    
     position: relative;
-    @media (min-width: 1024px) {
-        // height: 870px;
-
-    }
 
     a {
         color: #24a3ff;
@@ -566,12 +508,7 @@
     }
 }
 
-
-
-
-
 .pub-column {
- 
     @media (min-width: 1024px) {
         columns: 3;
         max-height: 1300px;
@@ -593,8 +530,6 @@
             padding: 0 0 45px;
         }
 
-
-
         &:nth-child(-n+3) {
             display: block;
         }
@@ -608,8 +543,6 @@
         >a {
             font-size: 0;
         }
-
-
 
         img {
             width: 100%;
@@ -633,7 +566,6 @@
             border-bottom: 4px solid #e6e6f0;
         }
     }
-
    
     h4 {
         padding-top: 20px;
@@ -648,9 +580,6 @@
             margin: 0 20px;
         }
     }
-
-
-
 }
 
 
@@ -742,8 +671,6 @@
     }
 }
 
-
-
 .team-photo {
     background: linear-gradient(264.71deg, #f01432 0%, #323264 29.69%), url(../images/team-photo.jpg);
     background-blend-mode: screen, normal;
@@ -757,7 +684,6 @@
     @media (min-width: 1024px) {
         font-size: 438px;
     }
-
 
     h1 {
         font-size: 36px;
@@ -796,8 +722,6 @@
     .separator {
         position: relative;
     }
-
-
 }
 
 .banner-area {
@@ -843,7 +767,6 @@
 
 .teampage {
     .hero {
-        
         @media (min-width: 1024px) {
             padding: 0 200px 60px;
             display: block;
@@ -859,7 +782,6 @@
 }
 
 .member-card {
-    
     color: #b3b3ba;
     padding: 20px 0;
     @media (min-width: 1024px) {
@@ -878,8 +800,6 @@
         margin: 0;
         padding: 20px 0 5px;
     }
-
-    
 
     .position:after {
         content: url(../images/arrow.svg);
@@ -914,7 +834,6 @@
             display: none;
         }
     }
-
 }
 
 .position {
@@ -942,24 +861,57 @@
     }
 }
 
-.team-member {
+.resume {
     display: flex;
-    padding: 0 150px;
-
-    .position {
-        display: inline;
-
+    flex-direction: column;
+    @media (min-width: 1024px) {
+        flex-direction: row;
     }
-
-    .member-photo {
-        width: 50%;
-        
-        img {
-            height: auto;
+    
+    .position, a {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        @media (min-width: 1024px) {
+            display: inline;
+            padding-bottom: 0;
         }
     }
 
-    .member-text {
+    .resume-position {
         padding: 0 0 0 20px;
+        @media (min-width: 1024px) {
+            width: 50%;
+        }
+    }
+
+    a {
+        position: relative;
+        @media (min-width: 1024px) {
+            margin-left: 20px;
+        }
+    }
+
+    .resume-text {
+        border-top: 4px solid #e6e6f0;
+        padding-top: 2px;
+        margin-top: 10px;
+        @media (min-width: 1024px) {
+            margin: 20px 150px 80px 0;
+            padding-top: 22px;
+        }
+    }
+}
+
+.resume-photo {
+    
+    @media (min-width: 1024px) {
+        width: 50%;
+        text-align: right;
+        padding-right: 20px;
+    }
+    
+    img {
+        border-radius: 12px;
     }
 }

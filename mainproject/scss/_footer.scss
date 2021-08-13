@@ -38,21 +38,8 @@
         }
     }
 
-    a:not(.fb)::before {
-        display: none;
-        @media (min-width: 1024px) {
-            content: "";
-            display: inline-block;
-            width: 6px;
-            height: 6px;
-            background: #b3b3ba;
-            border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            left: 7px;
-            cursor: initial;
-        }
+    a:not(.tel):hover {
+        color: #f0145a;
     }
 
     .tel {
