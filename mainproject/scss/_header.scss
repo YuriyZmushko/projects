@@ -9,10 +9,15 @@
         display: none;
     }
 
-    .header a:not(.tel) {
+    .head-contact a:not(.tel), .lang a {
     color: #fff;
     }
 
+    .nav-list a {
+        @media (min-width: 1024px) {
+            color: #fff;
+        }
+    }
     .nav-list a:hover, a.fb:hover {
         color: #f0145a;
     }

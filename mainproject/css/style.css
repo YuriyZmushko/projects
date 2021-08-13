@@ -598,8 +598,14 @@ li.active a {
   display: none;
 }
 
-.mainpage .header a:not(.tel) {
+.mainpage .head-contact a:not(.tel), .mainpage .lang a {
   color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .mainpage .nav-list a {
+    color: #fff;
+  }
 }
 
 .mainpage .nav-list a:hover, .mainpage a.fb:hover {
