@@ -445,26 +445,30 @@
 .partners {
     display: flex;
     flex-wrap: wrap;
-    
-    .logo-holder {
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 90px;
-        @media (min-width: 1024px) {
-            width: 25%;
-            height: 120px;
-        }
+}
 
-        a {
-            line-height: 0;
-        }
+.logo-holder {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    @media (min-width: 1024px) {
+        width: 25%;
+        height: 120px;
+    }
 
-        img {
-            max-width: 90%;
-            max-height: 90%;
-        }
+    a {
+        line-height: 0;
+    }
+
+    img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    img:hover {
+        transform: scale(110%);
     }
 }
 

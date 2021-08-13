@@ -602,7 +602,7 @@ li.active a {
   color: #fff;
 }
 
-.mainpage .nav-list a:hover {
+.mainpage .nav-list a:hover, .mainpage a.fb:hover {
   color: #f0145a;
 }
 
@@ -1642,7 +1642,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   flex-wrap: wrap;
 }
 
-.partners .logo-holder {
+.logo-holder {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -1651,19 +1651,23 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 }
 
 @media (min-width: 1024px) {
-  .partners .logo-holder {
+  .logo-holder {
     width: 25%;
     height: 120px;
   }
 }
 
-.partners .logo-holder a {
+.logo-holder a {
   line-height: 0;
 }
 
-.partners .logo-holder img {
+.logo-holder img {
   max-width: 90%;
   max-height: 90%;
+}
+
+.logo-holder img:hover {
+  transform: scale(110%);
 }
 
 .publications {
