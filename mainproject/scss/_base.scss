@@ -141,19 +141,6 @@ address {
     font-style: initial;
 }
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-
-.clearfix { 
-    display: inline-block; 
-}
-
 .bullet-flex {
     display: flex;
     justify-content: center;

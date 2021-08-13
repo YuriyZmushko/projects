@@ -9,12 +9,8 @@
         display: none;
     }
 
-    .header {
-        a, address {
-            @media (min-width: 1024px) {
-                color: #fff;
-            }
-        }
+    .header a:not(.tel) {
+    color: #fff;
     }
 
     .nav-list a:hover {
@@ -115,8 +111,6 @@ body:not(.mainpage) {
         flex-direction: row;
         top: 50px;
     }
-    
-    
 }
 
 .logo-nav {

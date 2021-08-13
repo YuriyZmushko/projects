@@ -499,19 +499,6 @@ address {
   font-style: initial;
 }
 
-.clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
-
-.clearfix {
-  display: inline-block;
-}
-
 .bullet-flex {
   display: flex;
   justify-content: center;
@@ -611,10 +598,8 @@ li.active a {
   display: none;
 }
 
-@media (min-width: 1024px) {
-  .mainpage .header a, .mainpage .header address {
-    color: #fff;
-  }
+.mainpage .header a:not(.tel) {
+  color: #fff;
 }
 
 .mainpage .nav-list a:hover {
