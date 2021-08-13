@@ -456,6 +456,14 @@ a {
   text-decoration: none;
 }
 
+a.regular {
+  color: #24a3ff;
+}
+
+a.regular:hover, .nav-list a:hover {
+  color: #f0145a;
+}
+
 .container {
   max-width: 1350px;
   padding: 0 20px;
@@ -536,10 +544,6 @@ address {
   letter-spacing: 0.05em;
 }
 
-a {
-  color: #24a3ff;
-}
-
 h3.caps a {
   position: relative;
 }
@@ -595,12 +599,26 @@ li.active a {
   left: 7px;
 }
 
+*:hover {
+  transition: all 0.3s;
+}
+
 .mainpage .logo img:nth-child(2) {
   display: none;
 }
 
 .mainpage .breadcrumb {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .mainpage .header a, .mainpage .header address {
+    color: #fff;
+  }
+}
+
+.mainpage .nav-list a:hover {
+  color: #f0145a;
 }
 
 body:not(.mainpage) .logo img:nth-child(1) {
@@ -611,31 +629,14 @@ body:not(.mainpage) .head-contact a, body:not(.mainpage) .head-addr, body:not(.m
   color: #b3b3ba;
 }
 
-body:not(.mainpage) .lang li.active a {
-  color: #b3b3ba;
-}
-
 body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::after, body:not(.mainpage) .menu-btn > span::before {
   background-color: #323264;
-}
-
-@media (min-width: 1024px) {
-  body:not(.mainpage) .nav-list a {
-    color: #24a3ff;
-  }
 }
 
 @media (min-width: 1024px) {
   body:not(.mainpage) .nav-list li.active a {
     color: #f0145a;
     border-bottom: 2px solid #f0145a;
-  }
-}
-
-@media (min-width: 1024px) {
-  body:not(.mainpage) .nav-list a:hover {
-    color: #f0145a;
-    transition: all 0.3s;
   }
 }
 
@@ -726,10 +727,6 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   }
 }
 
-.header a, .header address {
-  color: #fff;
-}
-
 .logo-nav {
   display: flex;
   align-items: center;
@@ -816,6 +813,10 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 .lang li.active {
   background: #f0145a;
   border-radius: 8px;
+}
+
+.lang li.active a {
+  color: #fff;
 }
 
 .lang li:not(.active) a:hover {
@@ -905,6 +906,12 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   background: #ededf7;
 }
 
+@media (min-width: 1024px) {
+  .nav-list li:active {
+    background: none;
+  }
+}
+
 .nav-list li:nth-child(1) {
   margin: 64px 20px 11px;
 }
@@ -926,14 +933,12 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 }
 
 .nav-list li a {
-  color: #24a3ff;
   font-size: 24px;
   font-weight: 700;
 }
 
 @media (min-width: 1024px) {
   .nav-list li a {
-    color: #fff;
     font-size: 18px;
     font-weight: 400;
   }
@@ -1005,7 +1010,6 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 #menu-toggle:checked ~ .nav-list {
   visibility: visible;
   opacity: 1;
-  transition: opacity .4s;
   overflow: hidden;
 }
 
@@ -1170,12 +1174,13 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   align-items: flex-end;
 }
 
-.scroll .img {
-  width: 42px;
+.scroll a:hover {
+  opacity: 1;
 }
 
 .scroll a {
   margin-bottom: 45px;
+  opacity: 0.5;
 }
 
 @media (min-width: 1024px) {
@@ -1238,12 +1243,6 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 @media (min-width: 1024px) {
   .txt-slider li.active::after {
     height: 100%;
-  }
-}
-
-@media (min-width: 1024px) {
-  .txt-slider a:after {
-    transition: all .8s;
   }
 }
 
@@ -1379,7 +1378,6 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 }
 
 .serv-menu h3 {
-  color: #24a3ff;
   padding-left: 15px;
 }
 
@@ -1503,6 +1501,12 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   .member-text .hero {
     margin: 3px 0 20px;
   }
+}
+
+.member-text a.hero:hover {
+  background: linear-gradient(270deg, #f0145a 0%, #ef8080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .name-position, .name-position h4 {
@@ -1682,10 +1686,6 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   position: relative;
 }
 
-.publications a {
-  color: #24a3ff;
-}
-
 .publications .caps {
   padding: 20px 0 5px;
   margin: 0;
@@ -1700,6 +1700,11 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 .pub-intro h3.caps a::after, .member-text h3.caps a::after {
   border-right: 2px solid #24a3ff;
   border-bottom: 2px solid #24a3ff;
+}
+
+.pub-intro h3.caps a:hover::after, .member-text h3.caps a:hover::after {
+  border-right: 2px solid #f0145a;
+  border-bottom: 2px solid #f0145a;
 }
 
 @media (min-width: 1024px) {

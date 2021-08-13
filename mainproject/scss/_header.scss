@@ -8,6 +8,18 @@
     .breadcrumb {
         display: none;
     }
+
+    .header {
+        a, address {
+            @media (min-width: 1024px) {
+                color: #fff;
+            }
+        }
+    }
+
+    .nav-list a:hover {
+        color: #f0145a;
+    }
 }
 
 body:not(.mainpage) {
@@ -21,31 +33,14 @@ body:not(.mainpage) {
         color: #b3b3ba;
     }
 
-    .lang li.active a {
-        color: #b3b3ba;
-        }
-
     .menu-btn>span, .menu-btn>span::after, .menu-btn>span::before {
         background-color: #323264;
-    }
-
-    .nav-list a {
-        @media (min-width: 1024px) {
-            color: #24a3ff;
-        }
     }
 
     .nav-list li.active a {
         @media (min-width: 1024px) {
             color: #f0145a;
             border-bottom: 2px solid #f0145a;
-        }
-    }
-
-    .nav-list a:hover {
-        @media (min-width: 1024px) {
-            color: #f0145a;
-            transition: all 0.3s;
         }
     }
 }
@@ -121,9 +116,7 @@ body:not(.mainpage) {
         top: 50px;
     }
     
-    a, address {
-        color: #fff;
-    }
+    
 }
 
 .logo-nav {
@@ -202,6 +195,10 @@ body:not(.mainpage) {
     border-radius: 8px;
 }
 
+.lang li.active a {
+    color: #fff;
+    }
+
 .lang li:not(.active) a:hover {
     background: #ededf7;
     border-radius: 8px;
@@ -279,6 +276,9 @@ body:not(.mainpage) {
 
     &:active {
         background: #ededf7;
+        @media (min-width: 1024px) {
+            background: none;
+        }
     }
     
     &:nth-child(1) {
@@ -296,11 +296,9 @@ body:not(.mainpage) {
     }
 
     a {
-        color: #24a3ff;
         font-size: 24px;
         font-weight: 700;
         @media (min-width: 1024px) {
-            color: #fff;
             font-size: 18px;
             font-weight: 400;
         }
@@ -370,6 +368,5 @@ body:not(.mainpage) {
 #menu-toggle:checked ~ .nav-list {
     visibility: visible;
     opacity: 1;
-    transition: opacity .4s;
     overflow: hidden;
 }

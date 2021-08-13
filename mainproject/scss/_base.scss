@@ -102,6 +102,15 @@ a {
     text-decoration: none;
 }
 
+a.regular {
+    color: #24a3ff;
+}
+
+a.regular:hover, .nav-list a:hover {
+    color: #f0145a;
+}
+
+
 .container {
     max-width: 1350px;
     padding: 0 20px;
@@ -159,7 +168,6 @@ address {
     background: #24a3ff;
     margin: 7px;
     border-radius: 50%;
-    
 }
 
 .bullet li:not(.active) {
@@ -176,11 +184,6 @@ address {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 0.05em;
-}
-
-a {
-    color: #24a3ff;
-
 }
 
 h3.caps a {
@@ -231,4 +234,8 @@ li.active a {
 
 .footer a:not(.fb)::before {
     left: 7px;
+}
+
+*:hover {
+    transition: all 0.3s;
 }
