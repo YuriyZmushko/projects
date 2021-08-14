@@ -14,7 +14,7 @@
     }
 
     .nav-list a {
-        @media (min-width: 1024px) {
+        @media (min-width: 768px) {
             color: #fff;
         }
     }
@@ -114,11 +114,18 @@ body:not(.mainpage) {
     top: 20px;
     z-index: 1;
 
-    
+    @media (min-width: 768px) {
+        top: 35px;
+    }
+
     @media (min-width: 1024px) {
+        top: 0;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
+    }
+
+    @media (min-width: 1440px) {
         top: 50px;
     }
 
@@ -132,12 +139,16 @@ body:not(.mainpage) {
     align-items: center;
     @media (min-width: 768px) {
         position: absolute;
-        left: 20px;
-        top: 50px;
+        left: 40px;
+        top: 40px;
     }
     @media (min-width: 1024px) {
         position: static;
+        padding-top: 75px;
+    }
 
+    @media (min-width: 1440px) {
+        padding-top: 0;
     }
 }
 
@@ -146,15 +157,19 @@ body:not(.mainpage) {
     flex-direction: column;
     width: 100%;
     @media (min-width: 768px) {
-        height: 160px;
+        height: 145px;
         justify-content: space-between;
         align-items: flex-start;
     }
 
     @media (min-width: 1024px) {
         width: auto;
-        height: auto;
+        height: 90px;
         align-items: flex-end;
+    }
+
+    @media (min-width: 1440px) {
+        height: auto;
     }
 }
 
@@ -162,18 +177,15 @@ body:not(.mainpage) {
     display: flex;
     align-items: center;
     @media (min-width: 1024px) {
-        padding-right: 25px;
-    }
-    @media (min-width: 1440px) {
         padding-right: 0;
-    }
 
+    }
 
     &>a, address {
         position: relative;
         color: #b3b3ba;
         font-size: 16px;
-        @media (min-width: 1024px) {
+        @media (min-width: 768px) {
             color: #fff;
             margin-left: 25px;
         }
@@ -207,7 +219,7 @@ body:not(.mainpage) {
     align-items: center;
     padding-bottom: 10px;
     @media (min-width: 768px) {
-        padding-left: 65px;
+        padding-left: 25px;
     }
 
     @media (min-width: 1024px) {
@@ -276,6 +288,9 @@ body:not(.mainpage) {
         background: transparent;
         width: 100%;
         border: none;
+    }
+
+    @media (min-width: 1024px) {
         padding: 0 0 0 10px;
     }
 
@@ -302,17 +317,23 @@ body:not(.mainpage) {
     
     list-style: none;
     text-align: center;
-    padding: 5px 40px;
+    padding: 15px 40px;
     background: #f5f5fa;
     margin: 11px 20px;
     border-radius: 12px;
     @media (min-width: 768px) {
         display: inline;
-        padding: 0 0 0 14px;
         text-align: left;
         background: transparent;
+        padding: 0 14px 0 0;
         margin: 0;
     }
+
+    @media (min-width: 1024px) {
+        padding: 0 0 0 14px;
+    }
+
+
 
     &:active {
         background: #ededf7;

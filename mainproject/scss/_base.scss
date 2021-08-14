@@ -53,8 +53,20 @@
 body {
     font: 16px/1.44 'TT Norms', sans-serif;
     color: #000;
+    @media (min-width: 768px) {
+        font-size: 17px;
+    }
     @media (min-width: 1024px) {
         font-size: 18px;
+    }
+}
+
+body:not(.mainpage) .main {
+    flex-grow: 1;
+    padding-top: 124px;
+
+    @media (min-width: 768px) {
+        padding-top: 200px;
     }
 }
 
@@ -80,6 +92,9 @@ h1 {
 
 h2 {
     font-size: 22px;
+    @media (min-width: 768px) {
+        font-size: 26px;
+    }
     @media (min-width: 1024px) {
         font-size: 32px;
     }
@@ -88,6 +103,9 @@ h2 {
 h3 {
     font-size: 18px;
     font-weight: 500;
+    @media (min-width: 768px) {
+        font-size: 20px;
+    }
     @media (min-width: 1024px) {
         font-size: 24px;
     }
@@ -116,8 +134,12 @@ a.regular:hover, .nav-list a:hover {
     padding: 0 20px;
     margin: 0 auto;
 
+    @media (min-width: 768px) {
+        padding: 0 40px;
+    }
+
     @media (min-width: 1024px) {
-        padding: 0 15px;
+        padding: 0 60px;
     }
 }
 
@@ -132,7 +154,15 @@ a.regular:hover, .nav-list a:hover {
     background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
+    @media (min-width: 768px) {
+        font-size: 35px;
+    }
     @media (min-width: 1024px) {
+        font-size: 38px;
+    }
+    
+    @media (min-width: 1440px) {
         font-size: 42px;
     }
 }
@@ -190,21 +220,13 @@ h3.caps a::after {
     right: -5px;
 }
 
-body:not(.mainpage) .main {
-    flex-grow: 1;
-    padding-top: 124px;
-    @media (min-width: 1024px) {
-        padding-top: 200px;
-    }
-}
-
 li.active a {
     cursor: default;
 }
 
 .head-contact>a::before, .head-contact address::before, .footer a:not(.fb)::before, .resume a::before {
     display: none;
-    @media (min-width: 1024px) {
+    @media (min-width: 768px) {
         content: "";
         display: inline-block;
         width: 6px;
@@ -225,4 +247,45 @@ li.active a {
 
 *:hover {
     transition: all 0.3s;
+}
+
+.btn {
+    border: 0;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #0085ff;
+}
+
+.btn:active {
+    background: #006ccf;
+    box-shadow: none;
+}
+
+.separator::after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: #E6E6F0;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+
+    @media (min-width: 768px) {
+        left: 40px;
+        right: 40px;
+    }
+
+    @media (min-width: 1024px) {
+        left: 60px;
+        right: 60px;
+    }
 }
