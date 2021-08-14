@@ -2027,7 +2027,21 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   margin: 0;
 }
 
+@media (min-width: 768px) {
+  .team-photo h1 {
+    font-size: 56px;
+    letter-spacing: 33px;
+  }
+}
+
 @media (min-width: 1024px) {
+  .team-photo h1 {
+    font-size: 76px;
+    letter-spacing: 53px;
+  }
+}
+
+@media (min-width: 1440px) {
   .team-photo h1 {
     font-size: 96px;
     letter-spacing: 63px;
