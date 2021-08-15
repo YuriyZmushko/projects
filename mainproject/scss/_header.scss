@@ -96,9 +96,6 @@ body:not(.mainpage) {
 .logo {
     margin-top: 5px;
     width: 78px;
-
-    
-
     @media (min-width: 768px) {
         margin-top: -5px;
         width: 155px;
@@ -117,14 +114,12 @@ body:not(.mainpage) {
     @media (min-width: 768px) {
         top: 35px;
     }
-
     @media (min-width: 1024px) {
         top: 0;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
     }
-
     @media (min-width: 1440px) {
         top: 50px;
     }
@@ -146,7 +141,6 @@ body:not(.mainpage) {
         position: static;
         padding-top: 75px;
     }
-
     @media (min-width: 1440px) {
         padding-top: 0;
     }
@@ -221,11 +215,9 @@ body:not(.mainpage) {
     @media (min-width: 768px) {
         padding-left: 25px;
     }
-
     @media (min-width: 1024px) {
         padding-left: 0;
     }
-
 }
 
 .tel {
@@ -280,7 +272,6 @@ body:not(.mainpage) {
     border-radius: 20px 20px 0 0;
     background: #fff;
     background-position: center;
-        
     @media (min-width: 768px) {
         visibility: visible;
         opacity: 1;
@@ -289,7 +280,6 @@ body:not(.mainpage) {
         width: 100%;
         border: none;
     }
-
     @media (min-width: 1024px) {
         padding: 0 0 0 10px;
     }
@@ -328,7 +318,6 @@ body:not(.mainpage) {
         padding: 0 14px 0 0;
         margin: 0;
     }
-
     @media (min-width: 1024px) {
         padding: 0 0 0 14px;
     }

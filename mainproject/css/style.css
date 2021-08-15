@@ -2159,6 +2159,12 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   padding: 20px 0;
 }
 
+@media (min-width: 600px) {
+  .member-card {
+    width: 47%;
+  }
+}
+
 @media (min-width: 1024px) {
   .member-card {
     width: 30%;
@@ -2170,7 +2176,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   border-radius: 12px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .member-card img {
     width: 100%;
   }
@@ -2195,7 +2201,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   left: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .member-card .position:after {
     top: -20px;
     right: 0;
@@ -2211,7 +2217,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   color: #f0145a;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .member-card br {
     display: none;
   }
@@ -2226,10 +2232,9 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 
 .card-flex {
   display: flex;
-  justify-content: space-between;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .card-flex {
     display: block;
   }
@@ -2241,7 +2246,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   margin: 20px 20px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .card-flex .mob-right {
     display: block;
     margin-right: 0;
@@ -2265,7 +2270,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   padding-bottom: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .resume .position, .resume a {
     display: inline;
     padding-bottom: 0;
@@ -2278,7 +2283,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 
 @media (min-width: 1024px) {
   .resume .resume-position {
-    width: 50%;
+    width: 60%;
   }
 }
 
@@ -2286,7 +2291,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   position: relative;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) {
   .resume a {
     margin-left: 20px;
   }
@@ -2298,7 +2303,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
   margin-top: 10px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .resume .resume-text {
     margin: 20px 150px 80px 0;
     padding-top: 22px;
@@ -2307,7 +2312,7 @@ body:not(.mainpage) .menu-btn > span, body:not(.mainpage) .menu-btn > span::afte
 
 @media (min-width: 1024px) {
   .resume-photo {
-    width: 50%;
+    width: 40%;
     text-align: right;
     padding-right: 20px;
   }

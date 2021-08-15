@@ -1,5 +1,3 @@
-@import "reset";
-
 @font-face {
     font-family: 'TT Norms';
     src: url('../fonts/TTNorms-Bold.woff2') format('woff2'),
@@ -133,11 +131,9 @@ a.regular:hover, .nav-list a:hover {
     max-width: 1350px;
     padding: 0 20px;
     margin: 0 auto;
-
     @media (min-width: 768px) {
         padding: 0 40px;
     }
-
     @media (min-width: 1024px) {
         padding: 0 60px;
     }
@@ -154,14 +150,12 @@ a.regular:hover, .nav-list a:hover {
     background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    
     @media (min-width: 768px) {
         font-size: 35px;
     }
     @media (min-width: 1024px) {
         font-size: 38px;
     }
-    
     @media (min-width: 1440px) {
         font-size: 42px;
     }
@@ -278,12 +272,10 @@ li.active a {
     bottom: 0;
     left: 20px;
     right: 20px;
-
     @media (min-width: 768px) {
         left: 40px;
         right: 40px;
     }
-
     @media (min-width: 1024px) {
         left: 60px;
         right: 60px;

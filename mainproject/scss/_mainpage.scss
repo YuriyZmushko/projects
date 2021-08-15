@@ -84,7 +84,7 @@
         margin: 5px 0 17px;
         @media (min-width: 1024px) {
             margin: 25px 0;
-            }
+        }
     }
 
     li.active::after {
@@ -117,7 +117,6 @@
         display: block;
         margin: 20px 0;
     }
-
     @media (min-width: 1440px) {
         width: 43%;
     }
@@ -154,7 +153,6 @@
         height: auto;
         background: none;
         margin: 0;
-    
     }
 }
 
@@ -163,7 +161,6 @@
     font-size: 14px;
     font-weight: 700;
     padding: 0;
-
     @media (min-width: 1024px) {
         display: none;
     }
@@ -200,7 +197,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-bottom: 10px;
-    
     @media (min-width: 1024px) {
         padding-bottom: 80px;
     }
@@ -208,12 +204,10 @@
     .item {
         width: 100%;
         padding-top: 18px;
-
         @media (min-width: 768px) {
             width: 46%;
             padding: 20px 0 0;
         }
-
         @media (min-width: 1440px) {
             width: 32%;
             padding: 70px 0 0;
@@ -268,7 +262,6 @@
 .team-banner {
     display: flex;
     margin-top: 15px;
-    // flex-wrap: wrap;
     @media (min-width: 1024px) {
         margin-top: 42px;
     }
@@ -308,7 +301,6 @@
 
 .member-text {
     padding: 20px;
-
     @media (min-width: 1024px) {
         padding: 40px;
     }
@@ -334,7 +326,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-
 }
 
 .name-position, .name-position h4 {
@@ -471,12 +462,10 @@
     justify-content: center;
     align-items: center;
     height: 90px;
-
     @media (min-width: 600px) {
         width: 33.33%;
         height: 120px;
     }
-
     @media (min-width: 1024px) {
         width: 25%;
         height: 120px;
@@ -519,7 +508,6 @@
         border-right: 2px solid #f0145a;
         border-bottom: 2px solid #f0145a;
     }
-
 } 
 
 .pub-intro {
@@ -527,12 +515,10 @@
 }
 
 .pub-board {
-
     @media (min-width: 600px) {
         overflow: hidden;
         max-height: 710px;
     }
-
     @media (min-width: 1024px) {
         margin-top: 40px;
     }
@@ -546,13 +532,11 @@
 }
 
 .pub-column {
-
     @media (min-width: 600px) {
         columns: 2;
         max-height: 1500px;
         column-gap: 20px;
     }
-
     @media (min-width: 1024px) {
         columns: 3;
         max-height: 1000px;
@@ -567,14 +551,10 @@
         overflow: hidden;
         display: none;
         font-size: 16px;
-        // padding: 8px 0;
-
-
         @media (min-width: 600px) {
             margin: 0 0 40px 0;
             padding: 0 0 20px;
         }
-
         @media (min-width: 1440px) {
             padding: 0 0 45px;
         }
@@ -632,12 +612,6 @@
             padding: 8px 0 0;
             margin: 0 20px;
         }
-
-        // @media (min-width: 1024px) {
-        //     display: block;
-        //     padding: 8px 0 0;
-        //     margin: 0 20px;
-        // }
     }
 }
 
