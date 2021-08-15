@@ -19,7 +19,7 @@
         }
     }
     .nav-list a:hover, a.fb:hover {
-        color: #f0145a;
+        color: $accent-color;
     }
 }
 
@@ -31,23 +31,23 @@ body:not(.mainpage) {
     }
     
     .head-contact a, .head-addr, .lang a {
-        color: #b3b3ba;
+        color: $txt-grey-color;
     }
 
     .menu-btn>span, .menu-btn>span::after, .menu-btn>span::before {
-        background-color: #323264;
+        background-color: $main-color;
     }
 
     .nav-list li.active a {
         @media (min-width: 768px) {
-            color: #f0145a;
-            border-bottom: 2px solid #f0145a;
+            color: $accent-color;
+            border-bottom: 2px solid $accent-color;
         }
     }
 }
 
 .breadcrumb {
-    color: #323264;
+    color: $main-color;
     font-size: 19px;
     padding: 0 0 5px 14px;
     position: relative;
@@ -177,7 +177,7 @@ body:not(.mainpage) {
 
     &>a, address {
         position: relative;
-        color: #b3b3ba;
+        color: $txt-grey-color;
         font-size: 16px;
         @media (min-width: 768px) {
             color: #fff;
@@ -203,7 +203,7 @@ body:not(.mainpage) {
     } 
 
     .fb:hover {
-        color: #24a3ff;
+        color: $bg-color;
     } 
 }
 
@@ -235,7 +235,7 @@ body:not(.mainpage) {
 }
 
 .lang li.active {
-    background: #f0145a;
+    background: $accent-color;
     border-radius: 8px;
 }
 
@@ -244,11 +244,11 @@ body:not(.mainpage) {
     }
 
 .lang li:not(.active) a:hover {
-    background: #ededf7;
+    background: $bg-alt-color;
     border-radius: 8px;
     margin: -5px -6px;
     padding: 5px 6px;
-    color: #b3b3ba;
+    color: $txt-grey-color;
 }
 
 .lang {
@@ -285,7 +285,7 @@ body:not(.mainpage) {
     }
 
     li.active a {
-        color: #f0145a;
+        color: $accent-color;
         @media (min-width: 768px) {
             color: #fff;
         }
@@ -308,7 +308,7 @@ body:not(.mainpage) {
     list-style: none;
     text-align: center;
     padding: 15px 40px;
-    background: #f5f5fa;
+    background: $bg-color;
     margin: 11px 20px;
     border-radius: 12px;
     @media (min-width: 768px) {
@@ -325,7 +325,7 @@ body:not(.mainpage) {
 
 
     &:active {
-        background: #ededf7;
+        background: $bg-alt-color;
         @media (min-width: 768px) {
             background: none;
         }
@@ -393,7 +393,7 @@ body:not(.mainpage) {
 }
 
 .second:active, body:not(.mainpage) .menu-btn:active {
-    background: #EDEDF7;
+    background: $bg-alt-color;
 }
 
 .second>span::after {

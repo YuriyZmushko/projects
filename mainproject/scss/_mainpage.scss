@@ -1,5 +1,5 @@
 .firstscreen {
-    background: url("../images/long-leg.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    background: url("../images/long-leg.svg"), linear-gradient(42.01deg, $main-color 14.33%, $main-color 51.39%, #7A425E 87.53%);
     background-size: 80vh, 100%;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     align-items: center;
 
     @media (min-width: 1024px) {
-    background: url("../images/long-leg.svg"), url("../images/firstscr-pattern.svg"), linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+    background: url("../images/long-leg.svg"), url("../images/firstscr-pattern.svg"), linear-gradient(42.01deg, $main-color 14.33%, $main-color 51.39%, #7A425E 87.53%);
     background-size: 80vh, 80vh, 100%;
     background-position: bottom, center, center;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 }
 
 .scroll {
-    background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%);
+    background: linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, $main-color 100%);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -47,7 +47,7 @@
 }
 
 .secondscreen {
-    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+    background: linear-gradient(228.57deg, $main-color 11.93%, $main-color 57.17%, #643e72 87.46%);
     background-position: center;
     background-repeat: no-repeat;
     color: #fff;
@@ -100,7 +100,7 @@
     }
 
     li.active a, .subtitle, a:hover {
-        background: linear-gradient(90deg, #f0145a 0%, #ef8080 100%);
+        background: linear-gradient(90deg, $accent-color 0%, #ef8080 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -113,7 +113,7 @@
     @media (min-width: 1024px) {
         width: 52%;
         text-align: right;
-        border-right: 4px solid #e6e6f0;
+        border-right: 4px solid $separat-color;
         display: block;
         margin: 20px 0;
     }
@@ -125,7 +125,7 @@
     a {
         font-size: 0;
         @media (min-width: 1024px) {
-            color: #b3b3ba;
+            color: $txt-grey-color;
             font-weight: 700;   
             font-size: 42px;
         }
@@ -137,7 +137,7 @@
             position: absolute;
             width: 4px;
             height: 100%;
-            background: #f0145a;
+            background: $accent-color;
             top: 0;
             right: -4px;
         }
@@ -268,7 +268,7 @@
 }
 
 .bg-rounded {
-    background: #f5f5fa;
+    background: $bg-color;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -322,7 +322,7 @@
     }
 
     a.hero:hover {
-        background: linear-gradient(270deg, #f0145a 0%, #ef8080 100%);
+        background: linear-gradient(270deg, $accent-color 0%, #ef8080 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -331,7 +331,7 @@
 .name-position, .name-position h4 {
     display: flex;
     align-items: center;
-    color: #b3b3ba;
+    color: $txt-grey-color;
 }
 
 .name-position-mob {
@@ -357,7 +357,7 @@
     }
 
     a:hover {
-        background: #ededf7;
+        background: $bg-alt-color;
     }
 }
 
@@ -372,16 +372,16 @@
     }
 
     h3 {
-        color: #686887;
+        color: $main-soft-color;
         
     }
 
     p {
-        color: #b3b3ba;
+        color: $txt-grey-color;
     }
 
     .caps {
-        color: #f0145a;
+        color: $accent-color;
         border-bottom: 2px solid #fff;
         margin: 0;
         padding: 20px;
@@ -446,7 +446,7 @@
     text-align: center;
     
     .caps {
-        color: #323264;
+        color: $main-color;
         margin: 30px 0;
     }
 }
@@ -486,7 +486,7 @@
 }
 
 .publications {
-    background: #f5f5fa;
+    background: $bg-color;
     position: relative;
 
     .caps {
@@ -500,13 +500,13 @@
 
 .pub-intro, .member-text {
     h3.caps a::after {
-        border-right: 2px solid #24a3ff;
-        border-bottom: 2px solid #24a3ff;
+        border-right: 2px solid $bg-color;
+        border-bottom: 2px solid $bg-color;
     }
 
     h3.caps a:hover::after {
-        border-right: 2px solid #f0145a;
-        border-bottom: 2px solid #f0145a;
+        border-right: 2px solid $accent-color;
+        border-bottom: 2px solid $accent-color;
     }
 } 
 
@@ -591,12 +591,12 @@
         display: block;
         font-size: 12px;
         font-weight: 700;
-        color: #b3b3ba;
+        color: $txt-grey-color;
         margin: 0 20px;
         padding: 5px 0 18px;
         
         @media (min-width: 600px) {
-            border-bottom: 4px solid #e6e6f0;
+            border-bottom: 4px solid $separat-color;
         }
     }
    
@@ -619,7 +619,7 @@
     text-align: center;
     padding: 20px 0 40px;
     @media (min-width: 600px) {
-        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+        background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, $bg-color 86.5%);
         position: absolute;
         bottom: 0;
         left: 0;

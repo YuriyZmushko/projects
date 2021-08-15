@@ -27,7 +27,7 @@
 
 .medals, .moto {
     width: 100%;
-    color: #323264;
+    color: $main-color;
     font-size: 18px;
     @media (min-width: 768px) {
         width: 40%;
@@ -38,13 +38,13 @@
 }
 
 .medals {
-    border-top: 4px solid #e6e6f0;
+    border-top: 4px solid $separat-color;
     padding: 20px 0 0;
     height: fit-content;
     @media (min-width: 768px) {
         padding: 0 0 0 20px;
         width: 40%;
-        border-left: 4px solid #e6e6f0;
+        border-left: 4px solid $separat-color;
         border-top: none;
     }
 
@@ -68,7 +68,7 @@
 }
 
 .team-photo {
-    background: linear-gradient(264.71deg, #f01432 0%, #323264 29.69%), url(../images/team-photo.jpg);
+    background: linear-gradient(264.71deg, #f01432 0%, $main-color 29.69%), url(../images/team-photo.jpg);
     background-blend-mode: screen, normal;
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +116,7 @@
 }
 
 .ach-banners {
-    background: #f5f5fa;
+    background: $bg-color;
     text-align: center;
 
     .caps {

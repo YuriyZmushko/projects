@@ -16,7 +16,7 @@
 }
 
 .member-card {
-    color: #b3b3ba;
+    color: $txt-grey-color;
     padding: 20px 0;
     @media (min-width: 600px) {
         width: 47%;
@@ -45,7 +45,7 @@
         height: 32px;
         display: block;
         background-size: 32px 32px;
-        background-color: #f5f5fa;
+        background-color: $bg-color;
         border-radius: 50%;
         position: absolute;
         top: 50px;
@@ -58,11 +58,11 @@
     }
 
     a:hover .position:after  {
-        background-color: #ededf7;
+        background-color: $bg-alt-color;
     }
 
     a:hover h4 {
-        color: #f0145a;
+        color: $accent-color;
     }
 
     br {
@@ -76,7 +76,7 @@
     position: relative;
     display: block;
     font-size: 16px;
-    color: #b3b3ba;
+    color: $txt-grey-color;
 }
 
 .card-flex {
