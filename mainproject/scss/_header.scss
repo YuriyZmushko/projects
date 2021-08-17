@@ -326,6 +326,10 @@ body:not(.mainpage) {
     background: $bg-color;
     margin: 11px 20px;
     border-radius: 12px;
+    @media (max-height: 320px) {
+        padding: 6px 0;
+        margin: 8px 20px;
+    }   
     @media (min-width: 768px) {
         display: inline;
         background: transparent;

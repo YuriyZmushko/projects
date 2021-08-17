@@ -1069,6 +1069,13 @@ body:not(.mainpage) .menu-btn {
   border-radius: 12px;
 }
 
+@media (max-height: 320px) {
+  .nav-list li {
+    padding: 6px 0;
+    margin: 8px 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .nav-list li {
     display: inline;
