@@ -1023,6 +1023,12 @@ body:not(.mainpage) .menu-btn {
   background-position: center;
 }
 
+@media (max-height: 320px) {
+  .nav-list {
+    padding: 36px 0 0;
+  }
+}
+
 @media (min-width: 768px) {
   .nav-list {
     visibility: visible;
@@ -1157,6 +1163,12 @@ body:not(.mainpage) .menu-btn {
 
 .second {
   top: 20px;
+}
+
+@media (max-height: 320px) {
+  .second {
+    top: 6px;
+  }
 }
 
 .menu-btn > span, .menu-btn > span::after, .menu-btn > span::before, .second > span, .second > span::after, .second > span::before {

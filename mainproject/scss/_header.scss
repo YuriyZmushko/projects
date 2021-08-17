@@ -288,6 +288,9 @@ body:not(.mainpage) {
     border-radius: 20px 20px 0 0;
     background: $white-color;
     background-position: center;
+    @media (max-height: 320px) {
+        padding: 36px 0 0;
+    }   
     @media (min-width: 768px) {
         visibility: visible;
         opacity: 1;
@@ -392,6 +395,9 @@ body:not(.mainpage) {
 
 .second {
     top: 20px;
+    @media (max-height: 320px) {
+        top: 6px;
+    }   
 }
 
 .menu-btn>span, .menu-btn>span::after, .menu-btn>span::before, .second>span, .second>span::after, .second>span::before {
