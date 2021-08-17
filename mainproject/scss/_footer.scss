@@ -1,6 +1,9 @@
 .footer {
     background: $bg-color;
-    padding: 20px 0 110px;
+    padding: 18px 0 108px;
+    @media (min-width: 768px) {
+        padding: 25px 0 50px;
+    }
     @media (min-width: 1024px) {
         padding: 30px 0 50px;
     }
@@ -29,9 +32,7 @@
     flex-direction: column;
     @media (min-width: 768px) {
         flex-direction: row;
-        text-align: left;
     }
-
 }
 
 .contacts {
@@ -40,10 +41,6 @@
     font-weight: 700;
     font-size: 16px;
     align-items: center;
-
-    @media (min-width: 1024px) {
-        text-align: left;
-    }
 
     a:not(.fb) {
         position: relative;
@@ -60,13 +57,17 @@
         color: $main-alt-color;
     }
 
+    .tel:hover {
+        color: $accent-color;
+    }
+
     .caps {
         font-size: 12px;
     }
 
     .fb {
         font-size: 45px;
-        padding: 5px 0;
+        padding: 6px 0;
     }
 }
 
@@ -86,7 +87,10 @@
 }
 
 .mail {
-    padding: 15px 0;
+    padding: 17px 0;
+    @media (min-width: 768px) {
+        padding: 20px 0 30px;
+    }
     @media (min-width: 1024px) {
         padding: 0;
     }

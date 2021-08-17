@@ -1,14 +1,14 @@
 .achievements {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     @media (min-width: 768px) {
         flex-direction: row;
-        margin-bottom: 30px;
+        padding-bottom: 30px;
     }
     @media (min-width: 1024px) {
         flex-direction: row;
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -21,7 +21,12 @@
     }
     @media (min-width: 1024px) {
         font-size: 21px;
-        width: 59%;
+        width: 60%;
+        padding: 0 40px 0 60px;
+    }
+
+    @media (min-width: 1440px) {
+        padding: 0 40px 0 100px;
     }
 }
 
@@ -39,7 +44,7 @@
 
 .medals {
     border-top: 4px solid $separat-color;
-    padding: 20px 0 0;
+    padding: 15px 0 6px;
     height: fit-content;
     @media (min-width: 768px) {
         padding: 0 0 0 20px;
@@ -48,9 +53,10 @@
         border-top: none;
     }
 
-    p:nth-last-child(1) {
-        @media (min-width: 768px) {
-            margin-bottom: 0;
+    p {
+        margin: 3px 0 15px;
+        @media (min-width: 1024px) {
+            margin: 0 0 35px 0;
         }
     }
 
@@ -60,10 +66,16 @@
     }
 }
 
-.moto {
-    padding: 0;
+.medal-info:nth-child(6) p {
     @media (min-width: 1024px) {
-        padding: 15px 0 0 20px;
+        margin-bottom: 0;
+    }
+}
+
+.moto {
+    padding: 10px 0 35px;
+    @media (min-width: 768px) {
+        padding: 20px 0 0 35px;
     }
 }
 
@@ -73,17 +85,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 290px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     @media (min-width: 1024px) {
-        font-size: 438px;
+        height: 410px;
     }
 
     h1 {
         font-size: 36px;
-        color: #fff;
+        color: $white-color;
         text-align: center;
         letter-spacing: 20px;
         text-transform: uppercase;
@@ -106,12 +118,11 @@
 }
 
 .achievements:nth-child(3) {
-    margin: 20px 0 40px;
     @media (min-width: 768px) {
-        margin: 30px 0;
+        padding-top: 30px;
     }
     @media (min-width: 1024px) {
-        margin: 80px 0;
+        padding-top: 80px;
     }
 }
 
@@ -120,7 +131,7 @@
     text-align: center;
 
     .caps {
-        padding: 28px 0;
+        padding: 29px 0;
         margin: 0;
     }
 
@@ -148,7 +159,7 @@
 .banner-ach {
     min-width: 157px;
     height: 57px;
-    background: #fff;
+    background: $white-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +174,7 @@
         height: 90px;
     }
     @media (min-width: 1440px) {
-        width: 300px;
+        width: 280px;
         height: 110px;
     }
 
@@ -174,7 +185,7 @@
 }
 
 .separator {
-    .bullet-flex li:nth-last-child(-n+2) {
+    .bullet-flex li:nth-last-child(-n+3) {
         @media (min-width: 768px) {
             display: none;
         }

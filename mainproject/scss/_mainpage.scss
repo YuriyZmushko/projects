@@ -50,7 +50,7 @@
     background: linear-gradient(228.57deg, $main-color 11.93%, $main-color 57.17%, #643e72 87.46%);
     background-position: center;
     background-repeat: no-repeat;
-    color: #fff;
+    color: $white-color;
     border-radius: 0 0 12px 12px;
 
     .utp-detail {
@@ -79,7 +79,7 @@
     }
 
     h2 {
-        color: #fff;
+        color: $white-color;
         font-weight: 500;
         margin: 5px 0 17px;
         @media (min-width: 1024px) {
@@ -120,7 +120,6 @@
     @media (min-width: 1440px) {
         width: 43%;
     }
-
 
     a {
         font-size: 0;
@@ -169,7 +168,7 @@
 .services {
 
     .caps a {
-        color: #fff;
+        color: $white-color;
         opacity: .5;
     }
 
@@ -186,9 +185,6 @@
 
     p {
         margin: 10px 0;
-        @media (min-width: 1024px) {
-            margin: 0;
-        }
     }
 }
 
@@ -216,6 +212,7 @@
 
     h3 {
         padding-left: 15px;
+        margin: 0;
         @media (min-width: 1440px) {
             padding: 0;
             margin: 12px 0;
@@ -226,14 +223,31 @@
 .item-mob {
     display: flex;
     align-items: center;
+    
     @media (min-width: 1440px) {
         display: block;
     }
 
     img {
+        max-width: 44px;
+        max-height: 44px;
+        @media (min-width: 1024px) {
+            max-width: 64px;
+            max-height: 64px;
+        }
+    }
+
+    .bg-rounded {
+        background: $white-color;
         width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
         @media (min-width: 1024px) {
             width: 92px;
+            height: 92px;
         }
     }
 }
@@ -290,7 +304,6 @@
         min-width: 420px;
     }
     @media (min-width: 1440px) {
-        // display: block;
         width: 31%;
     }
 
@@ -306,7 +319,6 @@
     }
     @media (min-width: 1440px) {
         width: 69%;
-        
     }
 
     .caps, h4 {
@@ -348,9 +360,6 @@
     display: flex;
     flex-wrap: wrap;   
     margin-top: 25px; 
-    @media (min-width: 1024px) {
-        margin-top: 35px;
-    }
 
     h3, p {
         width: 100%;
@@ -365,11 +374,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
-    @media (min-width: 1024px) {
-        padding-bottom: 0;
-    }
+    border-bottom: 2px solid $white-color;
+    border-left: 2px solid $white-color;
 
     h3 {
         color: $main-soft-color;
@@ -382,7 +388,7 @@
 
     .caps {
         color: $accent-color;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid $white-color;
         margin: 0;
         padding: 20px;
     }
@@ -500,8 +506,8 @@
 
 .pub-intro, .member-text {
     h3.caps a::after {
-        border-right: 2px solid $bg-color;
-        border-bottom: 2px solid $bg-color;
+        border-right: 2px solid $active-reg-color;
+        border-bottom: 2px solid $active-reg-color;
     }
 
     h3.caps a:hover::after {
@@ -510,14 +516,11 @@
     }
 } 
 
-.pub-intro {
-    margin-bottom: 20px;
-}
-
 .pub-board {
     @media (min-width: 600px) {
         overflow: hidden;
         max-height: 710px;
+        margin-top: 20px;
     }
     @media (min-width: 1024px) {
         margin-top: 40px;
@@ -544,7 +547,7 @@
     }
 
     .article {
-        background: #fff;
+        background: $white-color;
         border-radius: 8px;
         margin: 20px 0;
         break-inside: avoid-column;
@@ -557,10 +560,6 @@
         }
         @media (min-width: 1440px) {
             padding: 0 0 45px;
-        }
-
-        &:nth-child(1) {
-            margin: 0 0 20px;
         }
 
         &:nth-child(-n+3) {
