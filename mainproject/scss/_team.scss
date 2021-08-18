@@ -1,12 +1,7 @@
-
 .teampage {
-    // padding-bottom: 10px;
-
-
     .hero {
-        margin: 0;
         @media (min-width: 1024px) {
-            padding: 0 200px 40px;
+            padding: 0 200px 30px;
             display: block;
         }
     }
@@ -53,36 +48,21 @@
         }
     }
 
-    .position:after {
-        content: url(../images/arrow.svg);
-        padding: 7px 0 0 13px;;
-        width: 32px;
-        height: 32px;
-        display: block;
-        background-size: 32px 32px;
-        background-color: $bg-color;
-        border-radius: 50%;
-        margin-top: 10px;
-        @media (min-width: 600px) {
-            position: absolute;
-            top: -35px;
-            right: 0;
-        }
-    }
-
-    a:hover .position:after  {
-        background-color: $bg-alt-color;
-    }
-
-    a:hover h4 {
-        color: $accent-color;
-    }
+    
 
     br {
-        @media (min-width: 768px) {
+        @media (min-width: 1124px) {
             display: none;
         }
     }
+}
+
+a:hover .mob-right:after  {
+    background-color: $bg-alt-color;
+}
+
+a:hover h4 {
+    color: $accent-color;
 }
 
 .position {
@@ -101,10 +81,29 @@
     .mob-right {
         display: flex;
         flex-direction: column;
+        position: relative;
         margin: auto 0 0 20px;
             @media (min-width: 600px) {
             display: block;
             margin: 0;
+        }
+    }
+
+    .mob-right:after {
+        content: url("../images/arrow.svg");
+        padding: 8px 0 0 13px;;
+        width: 32px;
+        height: 32px;
+        display: block;
+        background-size: 32px 32px;
+        background-color: $bg-color;
+        border-radius: 50%;
+        margin-top: 10px;
+        line-height: 0;
+        @media (min-width: 600px) {
+            position: absolute;
+            bottom: 14px;
+            right: 0;
         }
     }
 }

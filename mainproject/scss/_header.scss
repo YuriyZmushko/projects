@@ -5,11 +5,9 @@
 }
 
 .mainpage {
-    .breadcrumb {
-        display: none;
-    }
 
-    .head-contact a:not(.tel), .lang a {
+    .head-contact a:not(.tel), 
+    .lang a {
     color: $white-color;
     }
 
@@ -17,9 +15,6 @@
         @media (min-width: 768px) {
             color: $white-color;
         }
-    }
-    .nav-list a:hover, a.fb:hover {
-        color: $accent-color;
     }
 }
 
@@ -37,23 +32,21 @@ body:not(.mainpage) {
         }
     }
 
-    .logo {
-        img:nth-child(1) {
-            display: none;
-        }
-    }
-
     .logo-nav {
         @media (min-width: 768px) {
             top: 60px;
         }
     }
     
-    .head-contact a, .head-addr, .lang a {
+    .head-contact a, 
+    .head-addr, 
+    .lang a {
         color: $txt-grey-color;
     }
 
-    .menu-btn>span, .menu-btn>span::after, .menu-btn>span::before {
+    .menu-btn>span, 
+    .menu-btn>span::after, 
+    .menu-btn>span::before {
         background-color: $main-color;
     }
 
@@ -76,43 +69,43 @@ body:not(.mainpage) {
     position: relative;
     @media (min-width: 768px) {
         font-size: 38px;
-        padding: 0 0 20px 27px;
+        padding: 0 0 22px 27px;
     }
-}
 
-.breadcrumb:before {
-    content: "";
-    display: block;
-    width: 12px;
-    height: 26px;
-    background-image: url(../images/slash.svg);
-    background-size: cover;
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    @media (min-width: 768px) {
-        width: 21px;
-        height: 47px;
-        top: 7px;
-        left: 2px;
+    &::before {
+        content: "";
+        display: block;
+        width: 12px;
+        height: 26px;
+        background-image: url("../images/slash.svg");
+        background-size: cover;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        @media (min-width: 768px) {
+            width: 21px;
+            height: 47px;
+            top: 7px;
+            left: 2px;
+        }
     }
-}
 
-.breadcrumb:after {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 26px;
-    background-image: url(../images/smbl-slash.svg);
-    background-size: cover;
-    position: absolute;
-    top: 2px;
-    right: -27px;
-    @media (min-width: 768px) {
-        width: 43px;
-        height: 47px;
-        top: 7px;
-        right: -45px;
+    &::after {
+        content: "";
+        display: block;
+        width: 24px;
+        height: 26px;
+        background-image: url("../images/smbl-slash.svg");
+        background-size: cover;
+        position: absolute;
+        top: 5px;
+        right: -42px;
+        @media (min-width: 768px) {
+            width: 43px;
+            height: 47px;
+            top: 7px;
+            right: -45px;
+        }
     }
 }
 
@@ -147,14 +140,14 @@ body:not(.mainpage) {
 
     a {
         line-height: 0;
-    }
 
-    a.fb:hover {
-        color: $active-reg-color;
-    }
-    
-    a.tel:hover {
-        color: $accent-color;
+        &.fb:hover {
+            color: $active-reg-color;
+        }
+
+        &.tel:hover {
+            color: $accent-color;
+        }
     }
 }
 
@@ -244,6 +237,11 @@ body:not(.mainpage) {
     letter-spacing: 0.03em;
 }
 
+.lang {
+    margin: 0;
+    padding: 0 5px 0;
+}
+
 .lang li {
     list-style: none;
     display: inline;
@@ -252,28 +250,19 @@ body:not(.mainpage) {
     font-size: 12px;
     font-weight: 700;
     margin: 0 -2px;
-}
 
-.lang li.active {
-    background: $accent-color;
-    border-radius: 8px;
-}
-
-.lang li.active a {
-    color: $white-color;
+    &.active {
+        background: $accent-color;
+        border-radius: 8px;
     }
 
-.lang li:not(.active) a:hover {
-    background: $bg-alt-color;
-    border-radius: 8px;
-    margin: -6px -7px;
-    padding: 6px 7px;
-    color: $txt-grey-color;
-}
-
-.lang {
-    margin: 0;
-    padding: 0 0px 5px 0;
+    &:not(.active) a:hover {
+        background: $bg-alt-color;
+        border-radius: 8px;
+        margin: -6px -7px;
+        padding: 6px 7px;
+        color: $txt-grey-color;
+    }
 }
 
 .nav-list {
@@ -307,6 +296,10 @@ body:not(.mainpage) {
         @media (min-width: 768px) {
             color: $white-color;
         }
+    }
+
+    a:hover {
+        color: $accent-color;
     }
 }
 
@@ -378,7 +371,8 @@ body:not(.mainpage) {
     display: none;
 }
 
-.menu-btn, .second {
+.menu-btn, 
+.second {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -400,7 +394,12 @@ body:not(.mainpage) {
     }   
 }
 
-.menu-btn>span, .menu-btn>span::after, .menu-btn>span::before, .second>span, .second>span::after, .second>span::before {
+.menu-btn>span, 
+.menu-btn>span::after, 
+.menu-btn>span::before, 
+.second>span, 
+.second>span::after, 
+.second>span::before {
     display: block;
     position: absolute;
     width: 18px;
@@ -408,13 +407,16 @@ body:not(.mainpage) {
     background-color: $white-color;
 }
 
-.second>span, .second>span::after, .second>span::before {
+.second>span, 
+.second>span::after, 
+.second>span::before {
     background-color: #ec6f5d;
     width: 24px;
     transform: rotate(45deg);
 }
 
-.second:active, body:not(.mainpage) .menu-btn:active {
+.second:active, 
+body:not(.mainpage) .menu-btn:active {
     background: $bg-alt-color;
 }
 
@@ -433,7 +435,9 @@ body:not(.mainpage) {
     top: -6px;
 }
 
-#menu-toggle:checked ~ .menu-btn>span, #menu-toggle:checked ~ .menu-btn>span::before, #menu-toggle:checked ~ .menu-btn>span::after {
+#menu-toggle:checked ~ .menu-btn>span, 
+#menu-toggle:checked ~ .menu-btn>span::before, 
+#menu-toggle:checked ~ .menu-btn>span::after {
     opacity: 0.7
 }
 

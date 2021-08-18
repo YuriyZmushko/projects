@@ -141,10 +141,10 @@ a {
 
 a.regular {
     color: $active-reg-color;
-}
 
-a.regular:hover, .nav-list a:hover {
-    color: $accent-color;
+    &:hover {
+        color: $accent-color;
+    }
 }
 
 .container {
@@ -168,6 +168,7 @@ a.regular:hover, .nav-list a:hover {
     background: linear-gradient(90deg, $accent-color 0%, #ef8080 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin: 0;
     @media (min-width: 768px) {
         font-size: 35px;
     }
@@ -202,10 +203,10 @@ address {
 .bullet li:not(.active) {
     opacity: .2;
     cursor: pointer;
-}
 
-.bullet li:not(.active):hover {
-    opacity: 0.6;
+    &:hover {
+        opacity: 0.6;
+    }
 }
 
 .caps {
@@ -217,25 +218,28 @@ address {
 
 h3.caps a {
     position: relative;
-}
-
-h3.caps a::after {
-    content: '';
-    width: 7px;
-    height: 7px;
-    border-right: 2px solid $white-color;
-    border-bottom: 2px solid $white-color;
-    transform: rotate(-45deg) translateY(100%);
-    position: absolute;
-    top: 0;
-    right: -5px;
+    
+    &::after {
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-right: 2px solid $white-color;
+        border-bottom: 2px solid $white-color;
+        transform: rotate(-45deg) translateY(100%);
+        position: absolute;
+        top: 0;
+        right: -5px;
+    }
 }
 
 li.active a {
     cursor: default;
 }
 
-.head-contact>a::before, .head-contact address::before, .footer a:not(.fb)::before, .resume a::before {
+.head-contact>a::before, 
+.head-contact address::before, 
+.footer a:not(.fb)::before, 
+.resume a::before {
     display: none;
     @media (min-width: 768px) {
         content: "";
@@ -252,10 +256,6 @@ li.active a {
     }
 }
 
-.footer a:not(.fb)::before {
-    left: 7px;
-}
-
 *:hover {
     transition: all 0.3s;
 }
@@ -263,21 +263,21 @@ li.active a {
 .btn {
     border: 0;
     background: $active-reg-color;
-    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    box-shadow: 0 0 20px rgba(36, 163, 255, 0.5);
     border-radius: 12px;
     color: $white-color;
     width: 250px;
     height: 50px;
     cursor: pointer;
-}
 
-.btn:hover {
-    background: $active-hov-color;
-}
+    &:hover {
+        background: $active-hov-color;
+    }
 
-.btn:active {
-    background: $active-act-color;
-    box-shadow: none;
+    &:active {
+        background: $active-act-color;
+        box-shadow: none;
+    }
 }
 
 .separator::after {
